@@ -1,0 +1,322 @@
+﻿//**********************************************  Valid Colors	***********************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
+//*************************************************************************************************************
+
+"Phrases"
+{
+
+	"Welcome Message"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL}輸入 {RED}!music {NORMAL}開啟音樂包選單並選擇你想聽的音樂!"
+	}
+
+	"Choose Default"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {NORMAL}預設音樂包 {NORMAL}了!"
+	}
+
+	"Choose Assault"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Daniel Sadowski | Crimson Assault {NORMAL}了!"
+	}
+
+	"Choose Sharpened"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Noisia | Sharpened {NORMAL}了!"
+	}
+
+	"Choose Insurgency"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Robert Allaire | Insurgency {NORMAL}了!"
+	}
+
+	"Choose AD8"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Sean Murray | A*D*8 {NORMAL}了!"
+	}
+
+	"Choose HighNoon"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}Feed Me | High Noon {NORMAL}了!"
+	}
+
+	"Choose HeadDemolition"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Dren | Death's Head Demolition {NORMAL}了!"
+	}
+
+	"Choose DesertFire"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Austin Wintory | Desert Fire {NORMAL}了!"
+	}
+
+	"Choose LNOE"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Sasha | Last Night On Earth {NORMAL}了!"
+	}
+
+	"Choose Metal"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Skog | Metal {NORMAL}了!"
+	}
+
+	"Choose Midnight"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Midnight Riders, All I Want for Christmas {NORMAL}了!"
+	}
+
+	"Choose IsoRhythm"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Matt Lange | IsoRhythm {NORMAL}了!"
+	}
+
+	"Choose ForNoMankind"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Mateo Messina | For No Mankind {NORMAL}了!"
+	}
+
+	"Choose HotlineMiami"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Various Artists | Hotline Miami {NORMAL}了!"
+	}
+
+	"Choose TotalDomination"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Daniel Sadowski | Total Domination {NORMAL}了!"
+	}
+
+	"Choose TheTalosPrincipal"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Damjan Mravunac | The Talos Principal {NORMAL}了!"
+	}
+	
+	"Choose Battlepack"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Proxy | Battlepack {NORMAL}了!"
+	}
+	
+	"Choose MOLOTOV"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Ki:Theory | MOLOTOV {NORMAL}了!"
+	}
+	
+	"Choose UberBlastoPhone"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Troels Folmann | Uber Blasto Phone {NORMAL}了!"
+	}
+	
+	"Choose HazardousEnvironments"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Kelly Bailey | Hazardous Environments {NORMAL}了!"
+	}
+	
+	"Choose IIHeadshot"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Skog | II-Headshot {NORMAL}了!"
+	}
+	
+	"Choose The8BitKit"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Daniel Sadowski | The 8-Bit Kit {NORMAL}了!"
+	}
+	
+	"Choose IAm"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}AWOLNATION | I Am {NORMAL}了!"
+	}
+	
+	"Choose Diamonds"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Mord Fustang | Diamonds {NORMAL}了!"
+	}
+	
+	"Choose Invasion"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Michael Bross | Invasion {NORMAL}了!"
+	}
+	
+	"Choose LionsMouth"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Ian Hultquist | Lion's Mouth {NORMAL}了!"
+	}
+	
+	"Choose SpongeFingerz"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}New Beat Fund | Sponge Fingerz {NORMAL}了!"
+	}
+	
+	"Choose Disgusting"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Beartooth | Disgusting {NORMAL}了!"
+	}
+	
+	"Choose JavaHavanaFunkaloo"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Lennie Moore | Java Havana Funkaloo {NORMAL}了!"
+	}
+	
+	"Choose MomentsCSGO"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {RED}Darude | Moments CSGO {NORMAL}了!"
+	}
+
+
+//****************************************************   WARNING   *******************************************************
+//********************************************   NO COLORS  BELOW THIS LINE   ********************************************
+
+	"Music Menu Title"
+	{
+		"zho"		"選擇你的音樂包"
+	}
+
+	"Music Menu Default"
+	{
+		"zho"		"預設音樂包"
+	}
+
+	"Music Menu Assault"
+	{
+		"zho"		"Daniel Sadowski | Crimson Assault"
+	}
+
+	"Music Menu Sharpened"
+	{
+		"zho"		"Noisia | Sharpened"
+	}
+
+	"Music Menu Insurgency"
+	{
+		"zho"		"Robert Allaire | Insurgency"
+	}
+
+	"Music Menu AD8"
+	{
+		"zho"		"Sean Murray | A*D*8"
+	}
+
+	"Music Menu HighNoon"
+	{
+		"zho"		"Feed Me | High Noon"
+	}
+
+	"Music Menu HeadDemolition"
+	{
+		"zho"		"Dren | Death's Head Demolition"
+	}
+
+	"Music Menu DesertFire"
+	{
+		"zho"		"Austin Wintory | Desert Fire"
+	}
+
+	"Music Menu LNOE"
+	{
+		"zho"		"Sasha | Last Night On Earth"
+	}
+
+	"Music Menu Metal"
+	{
+		"zho"		"Skog | Metal"
+	}
+
+	"Music Menu Midnight"
+	{
+		"zho"		"Midnight Riders | Christmas"
+	}
+
+	"Music Menu IsoRhythm"
+	{
+		"zho"		"Matt Lange | IsoRhythm"
+	}
+
+	"Music Menu ForNoMankind"
+	{
+		"zho"		"Mateo Messina | For No Mankind"
+	}
+
+	"Music Menu HotlineMiami"
+	{
+		"zho"		"Various Artists | Hotline Miami"
+	}
+
+	"Music Menu TotalDomination"
+	{
+		"zho"		"Daniel Sadowski | Total Domination"
+	}
+
+	"Music Menu TheTalosPrincipal"
+	{
+		"zho"		"Damjan Mravunac | The Talos Principal"
+	}
+	
+	"Music Menu Battlepack"
+	{
+		"zho"		"Proxy | Battlepack"
+	}
+	
+	"Music Menu MOLOTOV"
+	{
+		"zho"		"Ki:Theory | MOLOTOV"
+	}
+	
+	"Music Menu UberBlastoPhone"
+	{
+		"zho"		"Troels Folmann | Uber Blasto Phone"
+	}
+	
+	"Music Menu HazardousEnvironments"
+	{
+		"zho"		"Kelly Bailey | Hazardous Environments"
+	}
+		
+	"Music Menu IIHeadshot"
+	{
+		"zho"		"Skog | II-Headshot"
+	}
+	
+	"Music Menu The8BitKit"
+	{
+		"zho"		"Daniel Sadowski | The 8-Bit Kit"
+	}
+	
+	"Music Menu IAm"
+	{
+		"zho"		"AWOLNATION | I Am"
+	}
+	
+	"Music Menu Diamonds"
+	{
+		"zho"		"Mord Fustang | Diamonds"
+	}
+	
+	"Music Menu Invasion"
+	{
+		"zho"		"Michael Bross | Invasion"
+	}
+	
+	"Music Menu LionsMouth"
+	{
+		"zho"		"Ian Hultquist | Lion's Mouth"
+	}
+	
+	"Music Menu SpongeFingerz"
+	{
+		"zho"		"New Beat Fund | Sponge Fingerz"
+	}
+	
+	"Music Menu Disgusting"
+	{
+		"zho"		"Beartooth | Disgusting"
+	}
+	
+	"Music Menu JavaHavanaFunkaloo"
+	{
+		"zho"		"Lennie Moore | Java Havana Funkaloo"
+	}
+	
+	"Music Menu MomentsCSGO"
+	{
+		"zho"		"Darude | Moments CSGO"
+	}
+
+}
