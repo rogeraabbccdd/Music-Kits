@@ -9,4 +9,4 @@ iEx - Who make the original plugin
 
 lowie - Who make the original plugin
 
-Kento - Add 14 new music kits which updated are in 2015/9/24
+Kento - Add 14 new music kits which are updated in 2015/9/24
