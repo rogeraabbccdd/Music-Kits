@@ -8,158 +8,188 @@
 	"Welcome Message"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL}輸入 {RED}!music {NORMAL}開啟音樂包選單並選擇你想聽的音樂!"
-		"en"		"{GREEN}[Music] {NORMAL}Type {RED}!music {NORMAL}to select your music kit!"
+		"en"		"{GREEN}[Music] {NORMAL}Type {RED}!music {NORMAL}to Open the Menu and Choose Music You Want!"
 	}
 
 	"Choose Default"
 	{
-		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {REDL}預設音樂包 {NORMAL}了!"
-		"en"		"{GREEN}[Music] {NORMAL} Now you can listen {RED}Default Music Kit {NORMAL}in game!"
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}預設音樂包 {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Default Music {NORMAL}in Game Now!"
 	}
 
 	"Choose Assault"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Daniel Sadowski | Crimson Assault {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Daniel Sadowski | Crimson Assault {NORMAL}in Game Now!"
 	}
 
 	"Choose Sharpened"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Noisia | Sharpened {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PURPLE}Noisia | Sharpened {NORMAL}in Game Now!"
 	}
 
 	"Choose Insurgency"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Robert Allaire | Insurgency {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKBLUE}Robert Allaire | Insurgency {NORMAL}in Game Now!"
+		
 	}
 
 	"Choose AD8"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Sean Murray | A*D*8 {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PINK}Sean Murray | A*D*8 {NORMAL}in Game Now!"
 	}
 
 	"Choose HighNoon"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}Feed Me | High Noon {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {BLUE}Feed Me | High Noon {NORMAL}in Game Now!"
 	}
 
 	"Choose HeadDemolition"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Dren | Death's Head Demolition {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {GRAY}Dren | Death's Head Demolition {NORMAL}in Game Now!"
 	}
 
 	"Choose DesertFire"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Austin Wintory | Desert Fire {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Austin Wintory | Desert Fire {NORMAL}in Game Now!"
 	}
 
 	"Choose LNOE"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Sasha | Last Night On Earth {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Sasha | Last Night On Earth {NORMAL}in Game Now!"
 	}
 
 	"Choose Metal"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Skog | Metal {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PURPLE}Skog | Metal {NORMAL}in Game Now!"
 	}
 
 	"Choose Midnight"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Midnight Riders, All I Want for Christmas {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKBLUE}Midnight Riders, All I Want for Christmas {NORMAL}in Game Now!"
 	}
 
 	"Choose IsoRhythm"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Matt Lange | IsoRhythm {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PINK}Matt Lange | IsoRhythm {NORMAL}in Game Now!"
 	}
 
 	"Choose ForNoMankind"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}Mateo Messina | For No Mankind {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {BLUE}Mateo Messina | For No Mankind {NORMAL}in Game Now!"
 	}
 
 	"Choose HotlineMiami"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Various Artists | Hotline Miami {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {GRAY}Various Artists | Hotline Miami {NORMAL}in Game Now!"
 	}
 
 	"Choose TotalDomination"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Daniel Sadowski | Total Domination {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Daniel Sadowski | Total Domination {NORMAL}in Game Now!"
 	}
 
 	"Choose TheTalosPrincipal"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Damjan Mravunac | The Talos Principal {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Damjan Mravunac | The Talos Principal {NORMAL}in Game Now!"
 	}
 	
 	"Choose Battlepack"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Proxy | Battlepack {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PURPLE}Proxy | Battlepack {NORMAL}in Game Now!"
 	}
 	
 	"Choose MOLOTOV"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Ki:Theory | MOLOTOV {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKBLUE}Ki:Theory | MOLOTOV {NORMAL}in Game Now!"
 	}
 	
 	"Choose UberBlastoPhone"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Troels Folmann | Uber Blasto Phone {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PINK}Troels Folmann | Uber Blasto Phone {NORMAL}in Game Now!"
 	}
 	
 	"Choose HazardousEnvironments"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}Kelly Bailey | Hazardous Environments {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {BLUE}Kelly Bailey | Hazardous Environments {NORMAL}in Game Now!"
 	}
 	
 	"Choose IIHeadshot"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Skog | II-Headshot {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {GRAY}Skog | II-Headshot {NORMAL}in Game Now!"
 	}
 	
 	"Choose The8BitKit"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Daniel Sadowski | The 8-Bit Kit {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Daniel Sadowski | The 8-Bit Kit {NORMAL}in Game Now!"
 	}
 	
 	"Choose IAm"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}AWOLNATION | I Am {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}AWOLNATION | I Am {NORMAL}in Game Now!"
 	}
 	
 	"Choose Diamonds"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Mord Fustang | Diamonds {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PURPLE}Mord Fustang | Diamonds {NORMAL}in Game Now!"
 	}
 	
 	"Choose Invasion"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Michael Bross | Invasion {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKBLUE}Michael Bross | Invasion {NORMAL}in Game Now!"
 	}
 	
 	"Choose LionsMouth"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Ian Hultquist | Lion's Mouth {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PINK}Ian Hultquist | Lion's Mouth {NORMAL}in Game Now!"
 	}
 	
 	"Choose SpongeFingerz"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}New Beat Fund | Sponge Fingerz {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {BLUE}New Beat Fund | Sponge Fingerz {NORMAL}in Game Now!"
 	}
 	
 	"Choose Disgusting"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Beartooth | Disgusting {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {GRAY}Beartooth | Disgusting{NORMAL}in Game Now!"
 	}
 	
 	"Choose JavaHavanaFunkaloo"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Lennie Moore | Java Havana Funkaloo {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Lennie Moore | Java Havana Funkaloo {NORMAL}in Game Now!"
 	}
 	
 	"Choose MomentsCSGO"
 	{
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Darude | Moments CSGO {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Darude | Moments CSGO {NORMAL}in Game Now!"
 	}
 
 
@@ -319,31 +349,37 @@
 	"Music Menu Invasion"
 	{
 		"zho"		"Michael Bross | Invasion"
+		"en"		"Michael Bross | Invasion"
 	}
 	
 	"Music Menu LionsMouth"
 	{
 		"zho"		"Ian Hultquist | Lion's Mouth"
+		"en"		"Ian Hultquist | Lion's Mouth"
 	}
 	
 	"Music Menu SpongeFingerz"
 	{
 		"zho"		"New Beat Fund | Sponge Fingerz"
+		"en"		"New Beat Fund | Sponge Fingerz"
 	}
 	
 	"Music Menu Disgusting"
 	{
 		"zho"		"Beartooth | Disgusting"
+		"en"		"Beartooth | Disgusting"
 	}
 	
 	"Music Menu JavaHavanaFunkaloo"
 	{
 		"zho"		"Lennie Moore | Java Havana Funkaloo"
+		"en"		"Lennie Moore | Java Havana Funkaloo"
 	}
 	
 	"Music Menu MomentsCSGO"
 	{
 		"zho"		"Darude | Moments CSGO"
+		"en"		"Darude | Moments CSGO"
 	}
 
 }
