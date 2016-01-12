@@ -199,101 +199,121 @@
 	"Music Menu AD8"
 	{
 		"zho"		"Sean Murray | A*D*8"
+		"en"		"Sean Murray | A*D*8"
 	}
 
 	"Music Menu HighNoon"
 	{
 		"zho"		"Feed Me | High Noon"
+		"en"		"Feed Me | High Noon"
 	}
 
 	"Music Menu HeadDemolition"
 	{
 		"zho"		"Dren | Death's Head Demolition"
+		"en"		"Dren | Death's Head Demolition"
 	}
 
 	"Music Menu DesertFire"
 	{
 		"zho"		"Austin Wintory | Desert Fire"
+		"en"		"Austin Wintory | Desert Fire"
 	}
 
 	"Music Menu LNOE"
 	{
 		"zho"		"Sasha | Last Night On Earth"
+		"en"		"Sasha | Last Night On Earth"
 	}
 
 	"Music Menu Metal"
 	{
 		"zho"		"Skog | Metal"
+		"en"		"Skog | Metal"
 	}
 
 	"Music Menu Midnight"
 	{
 		"zho"		"Midnight Riders | Christmas"
+		"en"		"Midnight Riders | Christmas"
 	}
 
 	"Music Menu IsoRhythm"
 	{
 		"zho"		"Matt Lange | IsoRhythm"
+		"en"		"Matt Lange | IsoRhythm"
 	}
 
 	"Music Menu ForNoMankind"
 	{
 		"zho"		"Mateo Messina | For No Mankind"
+		"en"		"Mateo Messina | For No Mankind"
 	}
 
 	"Music Menu HotlineMiami"
 	{
 		"zho"		"Various Artists | Hotline Miami"
+		"en"		"Various Artists | Hotline Miami"
 	}
 
 	"Music Menu TotalDomination"
 	{
 		"zho"		"Daniel Sadowski | Total Domination"
+		"en"		"Daniel Sadowski | Total Domination"
 	}
 
 	"Music Menu TheTalosPrincipal"
 	{
 		"zho"		"Damjan Mravunac | The Talos Principal"
+		"en"		"Damjan Mravunac | The Talos Principal"
 	}
 	
 	"Music Menu Battlepack"
 	{
 		"zho"		"Proxy | Battlepack"
+		"en"		"Proxy | Battlepack"
 	}
 	
 	"Music Menu MOLOTOV"
 	{
 		"zho"		"Ki:Theory | MOLOTOV"
+		"en"		"Ki:Theory | MOLOTOV"
 	}
 	
 	"Music Menu UberBlastoPhone"
 	{
 		"zho"		"Troels Folmann | Uber Blasto Phone"
+		"en"		"Troels Folmann | Uber Blasto Phone"
 	}
 	
 	"Music Menu HazardousEnvironments"
 	{
 		"zho"		"Kelly Bailey | Hazardous Environments"
+		"en"		"Kelly Bailey | Hazardous Environments"
 	}
 		
 	"Music Menu IIHeadshot"
 	{
 		"zho"		"Skog | II-Headshot"
+		"en"		"Skog | II-Headshot"
 	}
 	
 	"Music Menu The8BitKit"
 	{
 		"zho"		"Daniel Sadowski | The 8-Bit Kit"
+		"en"		"Daniel Sadowski | The 8-Bit Kit"
 	}
 	
 	"Music Menu IAm"
 	{
 		"zho"		"AWOLNATION | I Am"
+		"en"		"AWOLNATION | I Am"
 	}
 	
 	"Music Menu Diamonds"
 	{
 		"zho"		"Mord Fustang | Diamonds"
+		"en"		"Mord Fustang | Diamonds"
 	}
 	
 	"Music Menu Invasion"
