@@ -2,11 +2,11 @@
 #include <cstrike>
 #include <sdktools>
 #include <clientprefs>
-#include <csgocolors>
+#include <kento_csgocolors>
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.6.0"
+#define PLUGIN_VERSION "1.7.0"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL ""
 
@@ -16,7 +16,7 @@ new Handle:g_cookieMusic;
 public Plugin:myinfo =
 {
     name = PLUGIN_NAME,
-    author = "iEx advanced by Kento",
+    author = "iEx Edited by Kento",
     description = "Allow to choose any music kit",
     version = PLUGIN_VERSION,
     url = "",
@@ -92,7 +92,7 @@ public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) 
 
 public Action:Music(client, args)
 {
-	if ( IsClientInGame(client) )
+	if (IsClientInGame(client))
 	{
         decl String: Default[32];
         decl String: Assault[32];
@@ -124,9 +124,14 @@ public Action:Music(client, args)
 		decl String: Disgusting[32];
 		decl String: JavaHavanaFunkaloo[32];
 		decl String: MomentsCSGO[32];
+		decl String: Aggressive[32];
+		decl String: The_Good[32];
+		decl String: FREE[32];
+		decl String: Life[32];
+		decl String: Backbone[32];
+		decl String: GLA[32];
+		decl String: III[32];
 		
-
-
         Format(Default, sizeof(Default), "%t", "Music Menu Default");
         Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
         Format(Sharpened, sizeof(Sharpened), "%t", "Music Menu Sharpened");
@@ -157,6 +162,13 @@ public Action:Music(client, args)
 		Format(Disgusting, sizeof(Disgusting), "%t", "Music Menu Disgusting");
 		Format(JavaHavanaFunkaloo, sizeof(JavaHavanaFunkaloo), "%t", "Music Menu JavaHavanaFunkaloo");
 		Format(MomentsCSGO, sizeof(MomentsCSGO), "%t", "Music Menu MomentsCSGO");
+		Format(Aggressive, sizeof(Aggressive), "%t", "Music Menu Aggressive");
+		Format(The_Good, sizeof(The_Good), "%t", "Music Menu The_Good");
+		Format(FREE, sizeof(FREE), "%t", "Music Menu FREE");
+		Format(Life, sizeof(Life), "%t", "Music Menu Life");
+		Format(Backbone, sizeof(Backbone), "%t", "Music Menu Backbone");
+		Format(GLA, sizeof(GLA), "%t", "Music Menu GLA");
+		Format(III, sizeof(III), "%t", "Music Menu III");
 
         new Handle:menu = CreateMenu(MusicHandler);
         SetMenuTitle(menu, "%t", "Music Menu Title");
@@ -190,8 +202,15 @@ public Action:Music(client, args)
 		AddMenuItem(menu, "29", Disgusting);
 		AddMenuItem(menu, "30", JavaHavanaFunkaloo);
 		AddMenuItem(menu, "31", MomentsCSGO);
+		AddMenuItem(menu, "32", Aggressive);
+		AddMenuItem(menu, "33", The_Good);
+		AddMenuItem(menu, "34", FREE);
+		AddMenuItem(menu, "35", Life);
+		AddMenuItem(menu, "36", Backbone);
+		AddMenuItem(menu, "37", GLA);
+		AddMenuItem(menu, "38", III);
         SetMenuExitButton(menu, true);
-        DisplayMenu(menu, client, 33);
+        DisplayMenu(menu, client, 40);
 	}
 	return Plugin_Handled;
 }
@@ -203,43 +222,53 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
         case MenuAction_Select:
         {
             new String:info[4];
-            GetMenuItem(menu, itemNum, info, sizeof(info));
+            
+			GetMenuItem(menu, itemNum, info, sizeof(info));
             SetMusic(client, StringToInt(info));
-            switch(Music_choice[client])
+            
+			switch(Music_choice[client])
             {
-                case 3:CPrintToChat(client, " %t","Choose Assault");
-                case 4:CPrintToChat(client, " %t","Choose Sharpened");
-                case 5:CPrintToChat(client, " %t","Choose Insurgency");
-                case 6:CPrintToChat(client, " %t","Choose AD8");
-                case 7:CPrintToChat(client, " %t","Choose HighNoon");
-                case 8:CPrintToChat(client, " %t","Choose HeadDemolition");
-                case 9:CPrintToChat(client, " %t","Choose DesertFire");
-                case 10:CPrintToChat(client, " %t","Choose LNOE");
-                case 11:CPrintToChat(client, " %t","Choose Metal");
-                case 12:CPrintToChat(client, " %t","Choose Midnight");
-                case 13:CPrintToChat(client, " %t","Choose IsoRhythm");
-                case 14:CPrintToChat(client, " %t","Choose ForNoMankind");
-                case 15:CPrintToChat(client, " %t","Choose HotlineMiami");
-                case 16:CPrintToChat(client, " %t","Choose TotalDomination");
-                case 17:CPrintToChat(client, " %t","Choose TheTalosPrincipal");
-				case 18:CPrintToChat(client, " %t","Choose Battlepack");
-				case 19:CPrintToChat(client, " %t","Choose MOLOTOV");
-				case 20:CPrintToChat(client, " %t","Choose UberBlastoPhone");
-				case 21:CPrintToChat(client, " %t","Choose HazardousEnvironments");
-				case 22:CPrintToChat(client, " %t","Choose IIHeadshot");
-				case 23:CPrintToChat(client, " %t","Choose The8BitKit");
-				case 24:CPrintToChat(client, " %t","Choose IAm");
-				case 25:CPrintToChat(client, " %t","Choose Diamonds");
-				case 26:CPrintToChat(client, " %t","Choose Invasion");
-				case 27:CPrintToChat(client, " %t","Choose LionsMouth");
-				case 28:CPrintToChat(client, " %t","Choose SpongeFingerz");
-				case 29:CPrintToChat(client, " %t","Choose Disgusting");
-				case 30:CPrintToChat(client, " %t","Choose JavaHavanaFunkaloo");
-				case 31:CPrintToChat(client, " %t","Choose MomentsCSGO");
+                case 3:CPrintToChat(client, "%t", "Choose Assault");
+                case 4:CPrintToChat(client, "%t", "Choose Sharpened");
+                case 5:CPrintToChat(client, "%t", "Choose Insurgency");
+                case 6:CPrintToChat(client, "%t", "Choose AD8");
+                case 7:CPrintToChat(client, "%t", "Choose HighNoon");
+                case 8:CPrintToChat(client, "%t", "Choose HeadDemolition");
+                case 9:CPrintToChat(client, "%t", "Choose DesertFire");
+                case 10:CPrintToChat(client, "%t", "Choose LNOE");
+                case 11:CPrintToChat(client, "%t", "Choose Metal");
+                case 12:CPrintToChat(client, "%t", "Choose Midnight");
+                case 13:CPrintToChat(client, "%t", "Choose IsoRhythm");
+                case 14:CPrintToChat(client, "%t", "Choose ForNoMankind");
+                case 15:CPrintToChat(client, "%t", "Choose HotlineMiami");
+                case 16:CPrintToChat(client, "%t", "Choose TotalDomination");
+                case 17:CPrintToChat(client, "%t", "Choose TheTalosPrincipal");
+				case 18:CPrintToChat(client, "%t", "Choose Battlepack");
+				case 19:CPrintToChat(client, "%t", "Choose MOLOTOV");
+				case 20:CPrintToChat(client, "%t", "Choose UberBlastoPhone");
+				case 21:CPrintToChat(client, "%t", "Choose HazardousEnvironments");
+				case 22:CPrintToChat(client, "%t", "Choose IIHeadshot");
+				case 23:CPrintToChat(client, "%t", "Choose The8BitKit");
+				case 24:CPrintToChat(client, "%t", "Choose IAm");
+				case 25:CPrintToChat(client, "%t", "Choose Diamonds");
+				case 26:CPrintToChat(client, "%t", "Choose Invasion");
+				case 27:CPrintToChat(client, "%t", "Choose LionsMouth");
+				case 28:CPrintToChat(client, "%t", "Choose SpongeFingerz");
+				case 29:CPrintToChat(client, "%t", "Choose Disgusting");
+				case 30:CPrintToChat(client, "%t", "Choose JavaHavanaFunkaloo");
+				case 31:CPrintToChat(client, "%t", "Choose MomentsCSGO");
+				case 32:CPrintToChat(client, "%t", "Choose Aggressive");
+				case 33:CPrintToChat(client, "%t", "Choose The_Good");
+				case 34:CPrintToChat(client, "%t", "Choose FREE");
+				case 35:CPrintToChat(client, "%t", "Choose Life");
+				case 36:CPrintToChat(client, "%t", "Choose Backbone");
+				case 37:CPrintToChat(client, "%t", "Choose GLA");
+				case 38:CPrintToChat(client, "%t", "Choose III-Arena");
 				
-                default: CPrintToChat(client, " %t","Choose Default");
+                default: CPrintToChat(client, "%t","Choose Default");
             }
         }
+		
         case MenuAction_End:
         {
             CloseHandle(menu);
@@ -249,10 +278,10 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-    if (Music_choice[client] < 0 || Music_choice[client] > 31 || Music_choice[client] == 2)
+    if (Music_choice[client] < 0 || Music_choice[client] > 38 || Music_choice[client] == 2)
         Music_choice[client] = 1;
     if( !GetEntProp(client, Prop_Send, "m_unMusicID") ) return;
-    SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
+		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
 }
 
 SetMusic(client, index=1)

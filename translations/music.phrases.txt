@@ -1,6 +1,10 @@
-//**********************************************  Valid Colors	***********************************************
-// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
-//*************************************************************************************************************
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
 
 "Phrases"
 {
@@ -191,6 +195,48 @@
 		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Darude | Moments CSGO {NORMAL}了!"
 		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Darude | Moments CSGO {NORMAL}in Game Now!"
 	}
+	
+	"Choose Aggressive"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PURPLE}Beartooth | Aggressive {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PURPLE}Beartooth | Aggressive {NORMAL}in Game Now!"
+	}
+	
+	"Choose The_Good"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKBLUE}Blitz Kids | The Good Youth {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKBLUE}Blitz Kids | The Good Youth {NORMAL}in Game Now!"
+	}
+	
+	"Choose FREE"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {PINK}Hundredth | FREE {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {PINK}Hundredth | FREE {NORMAL}in Game Now!"
+	}
+	
+	"Choose Life"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {BLUE}Neck Deep | Life's Not Out To Get You {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {BLUE}Neck Deep | Life's Not Out To Get You {NORMAL}in Game Now!"
+	}
+	
+	"Choose Backbone"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {GRAY}Roam | Backbone {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {GRAY}Roam | Backbone {NORMAL}in Game Now!"
+	}
+	
+	"Choose GLA"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {YELLOW}Twin Atlantic | GLA {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {YELLOW}Twin Atlantic | GLA {NORMAL}in Game Now!"
+	}
+	
+	"Choose III"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL} 你現在可以在遊戲裡聽 {DARKRED}Skog | III-Arena {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL} You Can Listen to Music: {DARKRED}Skog | III-Arena {NORMAL}in Game Now!"
+	}
 
 
 //****************************************************   WARNING   *******************************************************
@@ -380,6 +426,54 @@
 	{
 		"zho"		"Darude | Moments CSGO"
 		"en"		"Darude | Moments CSGO"
+	}
+	
+	"Music Menu MomentsCSGO"
+	{
+		"zho"		"Darude | Moments CSGO"
+		"en"		"Darude | Moments CSGO"
+	}
+	
+	"Music Menu Aggressive"
+	{
+		"zho"		"Beartooth | Aggressive"
+		"en"		"Beartooth | Aggressive"
+	}
+	
+	"Music Menu The_Good"
+	{
+		"zho"		"Blitz Kids | The Good Youth"
+		"en"		"Blitz Kids | The Good Youth"
+	}
+	
+	"Music Menu FREE"
+	{
+		"zho"		"Hundredth | FREE"
+		"en"		"Hundredth | FREE"
+	}
+	
+	"Music Menu Life"
+	{
+		"zho"		"Neck Deep | Life's Not Out To Get You"
+		"en"		"Neck Deep | Life's Not Out To Get You"
+	}
+	
+	"Music Menu Backbone"
+	{
+		"zho"		"Roam | Backbone"
+		"en"		"Roam | Backbone"
+	}
+	
+	"Music Menu GLA"
+	{
+		"zho"		"Twin Atlantic | GLA"
+		"en"		"Twin Atlantic | GLA"
+	}
+	
+	"Music Menu III"
+	{
+		"zho"		"Skog | III-Arena"
+		"en"		"Skog | III-Arena"
 	}
 
 }
