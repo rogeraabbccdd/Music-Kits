@@ -6,7 +6,7 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.7.0"
+#define PLUGIN_VERSION "1.7.2"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL ""
 
@@ -94,43 +94,43 @@ public Action:Music(client, args)
 {
 	if (IsClientInGame(client))
 	{
-		decl String: Default[32];
-		decl String: Assault[32];
-		decl String: Sharpened[32];
-		decl String: Insurgency[32];
-		decl String: AD8[32];
-		decl String: HighNoon[32];
-		decl String: HeadDemolition[32];
-		decl String: DesertFire[32];
-		decl String: LNOE[32];
-		decl String: Metal[32];
-		decl String: Midnight[32];
-		decl String: IsoRhythm[32];
-		decl String: ForNoMankind[32];
-		decl String: HotlineMiami[32];
-		decl String: TotalDomination[32];
-		decl String: TheTalosPrincipal[32];
-		decl String: Battlepack[32];
-		decl String: MOLOTOV[32];
-		decl String: UberBlastoPhone[32];
-		decl String: HazardousEnvironments[32];
-		decl String: IIHeadshot[32];
-		decl String: The8BitKit[32];
-		decl String: IAm[32];
-		decl String: Diamonds[32];
-		decl String: Invasion[32];
-		decl String: LionsMouth[32];
-		decl String: SpongeFingerz[32];
-		decl String: Disgusting[32];
-		decl String: JavaHavanaFunkaloo[32];
-		decl String: MomentsCSGO[32];
-		decl String: Aggressive[32];
-		decl String: The_Good[32];
-		decl String: FREE[32];
-		decl String: Life[32];
-		decl String: Backbone[32];
-		decl String: GLA[32];
-		decl String: III[32];
+		decl String: Default[128];
+		decl String: Assault[128];
+		decl String: Sharpened[128];
+		decl String: Insurgency[128];
+		decl String: AD8[128];
+		decl String: HighNoon[128];
+		decl String: HeadDemolition[128];
+		decl String: DesertFire[128];
+		decl String: LNOE[128];
+		decl String: Metal[128];
+		decl String: Midnight[128];
+		decl String: IsoRhythm[128];
+		decl String: ForNoMankind[128];
+		decl String: HotlineMiami[128];
+		decl String: TotalDomination[128];
+		decl String: TheTalosPrincipal[128];
+		decl String: Battlepack[128];
+		decl String: MOLOTOV[128];
+		decl String: UberBlastoPhone[128];
+		decl String: HazardousEnvironments[128];
+		decl String: IIHeadshot[128];
+		decl String: The8BitKit[128];
+		decl String: IAm[128];
+		decl String: Diamonds[128];
+		decl String: Invasion[128];
+		decl String: LionsMouth[128];
+		decl String: SpongeFingerz[128];
+		decl String: Disgusting[128];
+		decl String: JavaHavanaFunkaloo[128];
+		decl String: MomentsCSGO[128];
+		decl String: Aggressive[128];
+		decl String: The_Good[128];
+		decl String: FREE[128];
+		decl String: Life[128];
+		decl String: Backbone[128];
+		decl String: GLA[128];
+		decl String: III[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
