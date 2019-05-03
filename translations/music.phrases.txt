@@ -11,9 +11,9 @@
 
 	"Welcome Message"
 	{
-		"zho"		"{GREEN}[Music] {NORMAL}可以輸入 {RED}!music {NORMAL}開啟音樂包選單並選擇你想聽的音樂!"
-		"en"		"{GREEN}[Music] {NORMAL}Can Type {RED}!music {NORMAL}to Open the Menu and Choose Music You Want!"
-		"chi"		"{GREEN}[Music] {NORMAL}可以输入 {RED}!music {NORMAL}开启音乐盒菜单并选择你想听的音乐!"
+		"zho"		"{GREEN}[Music] {NORMAL}輸入 {RED}!music {NORMAL}開啟音樂包選單並選擇你想聽的音樂!"
+		"en"		"{GREEN}[Music] {NORMAL}Type {RED}!music {NORMAL}to Open the Menu and Choose Music You Want!"
+		"chi"		"{GREEN}[Music] {NORMAL}输入 {RED}!music {NORMAL}开启音乐盒菜单并选择你想听的音乐!"
 	}
 
 	"Choose Default"
