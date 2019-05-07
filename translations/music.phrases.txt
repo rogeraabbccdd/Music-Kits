@@ -240,8 +240,8 @@
 	
 	"Choose EZ4ENCE"
 	{
-		"zho"		"{GREEN}[ Music ] {NORMAL}你現在可以在遊戲裡聽 {PINK}The Verkkars | EZ4ENCE{NORMAL}了!"
-		"en"		"{GREEN}[ Music ] {NORMAL}You Can Listen to Music: {PINK}The Verkkars | EZ4ENCE {NORMAL}in Game Now!"
+		"zho"		"{GREEN}[Music] {NORMAL}你現在可以在遊戲裡聽 {PINK}The Verkkars | EZ4ENCE{NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL}You Can Listen to Music: {PINK}The Verkkars | EZ4ENCE {NORMAL}in Game Now!"
 	}
 
 
