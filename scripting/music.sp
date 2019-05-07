@@ -6,7 +6,7 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.7.2"
+#define PLUGIN_VERSION "1.7.3"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL ""
 
@@ -31,6 +31,7 @@ public OnPluginStart()
 
 	HookEvent("player_spawn", Event_Player_Spawn, EventHookMode_Pre);
 	HookEvent("player_disconnect", Event_Disc);
+	
 	RegConsoleCmd("sm_music", Music, "Set Music in Game.");
 
 	for (new i = 1; i <= MaxClients; i++)
@@ -131,6 +132,7 @@ public Action:Music(client, args)
 		decl String: Backbone[128];
 		decl String: GLA[128];
 		decl String: III[128];
+		decl String: EZ4ENCE[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -169,6 +171,7 @@ public Action:Music(client, args)
 		Format(Backbone, sizeof(Backbone), "%t", "Music Menu Backbone");
 		Format(GLA, sizeof(GLA), "%t", "Music Menu GLA");
 		Format(III, sizeof(III), "%t", "Music Menu III");
+		Format(EZ4ENCE, sizeof(EZ4ENCE), "%t", "Music Menu EZ4ENCE");
 
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
@@ -209,6 +212,7 @@ public Action:Music(client, args)
 		AddMenuItem(menu, "36", Backbone);
 		AddMenuItem(menu, "37", GLA);
 		AddMenuItem(menu, "38", III);
+		AddMenuItem(menu, "39", EZ4ENCE);
 		SetMenuExitButton(menu, true);
 		DisplayMenu(menu, client, 40);
 	}
@@ -264,6 +268,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 36:CPrintToChat(client, "%t", "Choose Backbone");
 				case 37:CPrintToChat(client, "%t", "Choose GLA");
 				case 38:CPrintToChat(client, "%t", "Choose III");
+				case 39:CPrintToChat(client, "%t", "Choose EZ4ENCE");
 				
 				default: CPrintToChat(client, "%t","Choose Default");
 			}
@@ -278,7 +283,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 38 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 39 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
 		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);

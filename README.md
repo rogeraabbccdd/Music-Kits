@@ -8,3 +8,4 @@ https://forums.alliedmods.net/showthread.php?p=2261789#post2261789
 - iEx - Who make the original plugin.
 - lowie - Who make the original plugin.
 - Kento - Add more music kits.
+- crashzk - Add music kit EZ4ENCE & Translation Update.
