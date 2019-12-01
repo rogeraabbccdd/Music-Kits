@@ -319,6 +319,14 @@
 		"pt"		"{GREEN}[Music] {NORMAL}Você pode ouvir música: {PURPLE}The Verkkars | EZ4ENCE {NORMAL}no jogo agora!"
 		"chi"		"{GREEN}[Music] {NORMAL}你现在可以在游戏里听 {PURPLE}The Verkkars | EZ4ENCE {NORMAL}了!"
 	}
+	
+	"Choose TheMasterChiefCollection"
+	{
+		"zho"		"{GREEN}[Music] {NORMAL}你現在可以在遊戲裡聽 {PURPLE}The Master Chief Collection By Halo {NORMAL}了!"
+		"en"		"{GREEN}[Music] {NORMAL}You can listen to music: {PURPLE}The Master Chief Collection By Halo {NORMAL}in game now!"
+		"pt"		"{GREEN}[Music] {NORMAL}Você pode ouvir música: {PURPLE}The Master Chief Collection By Halo {NORMAL}no jogo agora!"
+		"chi"		"{GREEN}[Music] {NORMAL}你现在可以在游戏里听 {PURPLE}The Master Chief Collection By Halo {NORMAL}了!"
+	}
 
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -633,5 +641,13 @@
 		"en"		"The Verkkars | EZ4ENCE"
 		"pt"		"The Verkkars | EZ4ENCE"
 		"chi"		"The Verkkars | EZ4ENCE"
+	}
+	
+	"Music Menu TheMasterChiefCollection"
+	{
+		"zho"		"The Master Chief Collection By Halo"
+		"en"		"The Master Chief Collection By Halo"
+		"pt"		"The Master Chief Collection By Halo"
+		"chi"		"The Master Chief Collection By Halo"
 	}
 }
