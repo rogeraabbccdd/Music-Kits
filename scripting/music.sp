@@ -6,7 +6,7 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.7.2"
+#define PLUGIN_VERSION "1.7.3"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL ""
 
@@ -286,7 +286,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 39 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 40 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
 		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
