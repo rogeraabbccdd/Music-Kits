@@ -327,6 +327,14 @@
 		"pt"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}Você pode ouvir música: {ORANGE}Halo | The Master Chief Collection {NORMAL}no jogo agora!"
 		"chi"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}你现在可以在游戏里听 {ORANGE}Halo | The Master Chief Collection {NORMAL}了!"
 	}
+	
+	"Choose KingScar"
+	{
+		"zho"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}你現在可以在遊戲裡聽 {BLUE}Scarlxrd | King, Scar {NORMAL}了!"
+		"en"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}You can listen to music: {BLUE}Scarlxrd | King, Scar {NORMAL}in game now!"
+		"pt"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}Você pode ouvir música: {BLUE}Scarlxrd | King, Scar {NORMAL}no jogo agora!"
+		"chi"		"{ORANGE}[{GREEN}MUSIC{ORANGE}] {NORMAL}你现在可以在游戏里听 {BLUE}Scarlxrd | King, Scar {NORMAL}了!"
+	}
 
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -649,5 +657,13 @@
 		"en"		"Halo | The Master Chief Collection"
 		"pt"		"Halo | The Master Chief Collection"
 		"chi"		"Halo | 大师首席收藏"
+	}
+	
+	"Music Menu KingScar"
+	{
+		"zho"		"Scarlxrd | King, Scar"
+		"en"		"Scarlxrd | King, Scar"
+		"pt"		"Scarlxrd | King, Scar"
+		"chi"		"Scarlxrd | 疤痕之王"
 	}
 }

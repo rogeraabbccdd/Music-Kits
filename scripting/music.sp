@@ -6,7 +6,7 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.7.3"
+#define PLUGIN_VERSION "1.7.4"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL ""
 
@@ -31,7 +31,8 @@ public OnPluginStart()
 
 	HookEvent("player_spawn", Event_Player_Spawn, EventHookMode_Pre);
 	HookEvent("player_disconnect", Event_Disc);
-	RegConsoleCmd("sm_music", Music, "Set Music in Game.");
+	
+	RegConsoleCmd("sm_music", Music, "Set Music in Game");
 
 	for (new i = 1; i <= MaxClients; i++)
 	{
@@ -133,6 +134,7 @@ public Action:Music(client, args)
 		decl String: III[128];
 		decl String: EZ4ENCE[128];
 		decl String: TheMasterChiefCollection[128];
+		decl String: KingScar[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -173,6 +175,7 @@ public Action:Music(client, args)
 		Format(III, sizeof(III), "%t", "Music Menu III");
 		Format(EZ4ENCE, sizeof(EZ4ENCE), "%t", "Music Menu EZ4ENCE");
 		Format(TheMasterChiefCollection, sizeof(TheMasterChiefCollection), "%t", "Music Menu TheMasterChiefCollection");
+		Format(KingScar, sizeof(KingScar), "%t", "Music Menu KingScar");
 
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
@@ -215,8 +218,9 @@ public Action:Music(client, args)
 		AddMenuItem(menu, "38", III);
 		AddMenuItem(menu, "39", EZ4ENCE);
 		AddMenuItem(menu, "40", TheMasterChiefCollection);
+		AddMenuItem(menu, "41", KingScar);
 		SetMenuExitButton(menu, true);
-		DisplayMenu(menu, client, 41);
+		DisplayMenu(menu, client, 42);
 	}
 	return Plugin_Handled;
 }
@@ -272,6 +276,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 38:CPrintToChat(client, "%t", "Choose III");
 				case 39:CPrintToChat(client, "%t", "Choose EZ4ENCE");
 				case 40:CPrintToChat(client, "%t", "Choose TheMasterChiefCollection");
+				case 41:CPrintToChat(client, "%t", "Choose KingScar");
 				
 				default: CPrintToChat(client, "%t","Choose Default");
 			}
@@ -286,7 +291,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 40 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 41 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
 		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
