@@ -5,7 +5,7 @@ Allow player to use official valve music kit in game.
 https://forums.alliedmods.net/showthread.php?p=2261789#post2261789
 
 ## Commands
-- `sm_music` - Set Music in Game;
+- `sm_music` - Set music kit in Game.
 
 ## Credits
 - iEx - Who make the original plugin.
