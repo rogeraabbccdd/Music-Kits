@@ -6,20 +6,22 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.7.4"
+#define PLUGIN_VERSION "1.8"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
-#define UPDATE_URL ""
+#define UPDATE_URL "https://github.com/rogeraabbccdd/Music-Kits"
 
 new Music_choice[MAXPLAYERS+1] = {1,...};
 new Handle:g_cookieMusic;
 
+new Handle:cvarmusikitspawnmsg = INVALID_HANDLE;
+
 public Plugin:myinfo =
 {
 	name = PLUGIN_NAME,
-	author = "iEx Edited by Kento",
-	description = "Allow to choose any music kit",
+	author = "iEx Edited by Kento & crashzk",
+	description = "Allows you to choose any official valve music kit",
 	version = PLUGIN_VERSION,
-	url = "",
+	url = UPDATE_URL,
 }
 
 public OnPluginStart()
@@ -33,6 +35,8 @@ public OnPluginStart()
 	HookEvent("player_disconnect", Event_Disc);
 	
 	RegConsoleCmd("sm_music", Music, "Set Music in Game");
+	
+	cvarmusikitspawnmsg = CreateConVar("sm_musickit_spawnmsg", "1", "Enable or Disable Spawn Messages");
 
 	for (new i = 1; i <= MaxClients; i++)
 	{
@@ -58,17 +62,19 @@ public OnClientCookiesCached(client)
 	}
 }
 
-public OnClientPostAdminCheck(client)
+public Action:PlayerSpawn(Handle:event, const String:name[], bool:dontBroadcast)
 {
-	CreateTimer(15.0, Timer_WelcomeMessage, client);
-}
-
-public Action:Timer_WelcomeMessage(Handle:timer, any:client)
-{
-	if (!(0 < client <= MaxClients)) return;
-	if ( !IsClientInGame(client) ) return;
-	if( IsFakeClient(client) ) return;
-	CPrintToChat(client, "%t", "Welcome Message");
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	
+	if (GetClientTeam(client) == 1 && !IsPlayerAlive(client))
+	{
+	return;
+	}
+	
+	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
+	{	
+		CPrintToChat(client, "%t", "Spawn Message");
+	}
 }
 
 public Action:Event_Player_Spawn(Handle:event, const String:name[], bool:dontBroadcast)
@@ -135,6 +141,14 @@ public Action:Music(client, args)
 		decl String: EZ4ENCE[128];
 		decl String: TheMasterChiefCollection[128];
 		decl String: KingScar[128];
+		decl String: HalfLifeAlyx[128];
+		decl String: Bachram[128];
+		decl String: GunmanTacoTruck[128];
+		decl String: EyeoftheDragon[128];
+		decl String: Drifter[128];
+		decl String: Bodacious[128];
+		decl String: MUDDFORCE[128];
+		decl String: NeoNoir[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -176,6 +190,14 @@ public Action:Music(client, args)
 		Format(EZ4ENCE, sizeof(EZ4ENCE), "%t", "Music Menu EZ4ENCE");
 		Format(TheMasterChiefCollection, sizeof(TheMasterChiefCollection), "%t", "Music Menu TheMasterChiefCollection");
 		Format(KingScar, sizeof(KingScar), "%t", "Music Menu KingScar");
+		Format(HalfLifeAlyx, sizeof(HalfLifeAlyx), "%t", "Music Menu HalfLifeAlyx");
+		Format(Bachram, sizeof(Bachram), "%t", "Music Menu Bachram");
+		Format(GunmanTacoTruck, sizeof(GunmanTacoTruck), "%t", "Music Menu GunmanTacoTruck");
+		Format(EyeoftheDragon, sizeof(EyeoftheDragon), "%t", "Music Menu EyeoftheDragon");
+		Format(Drifter, sizeof(Drifter), "%t", "Music Menu Drifter");
+		Format(Bodacious, sizeof(Bodacious), "%t", "Music Menu Bodacious");
+		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
+		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
 
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
@@ -218,9 +240,18 @@ public Action:Music(client, args)
 		AddMenuItem(menu, "38", III);
 		AddMenuItem(menu, "39", EZ4ENCE);
 		AddMenuItem(menu, "40", TheMasterChiefCollection);
-		AddMenuItem(menu, "41", KingScar);
+		AddMenuItem(menu, "41", KingScar);		
+		AddMenuItem(menu, "42", HalfLifeAlyx);		
+		AddMenuItem(menu, "43", Bachram);
+		AddMenuItem(menu, "44", GunmanTacoTruck);
+		AddMenuItem(menu, "45", EyeoftheDragon);
+		AddMenuItem(menu, "46", Drifter);
+		AddMenuItem(menu, "47", Bodacious);
+		AddMenuItem(menu, "48", MUDDFORCE);
+		AddMenuItem(menu, "49", NeoNoir);
+		
 		SetMenuExitButton(menu, true);
-		DisplayMenu(menu, client, 42);
+		DisplayMenu(menu, client, 50);
 	}
 	return Plugin_Handled;
 }
@@ -277,6 +308,14 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 39:CPrintToChat(client, "%t", "Choose EZ4ENCE");
 				case 40:CPrintToChat(client, "%t", "Choose TheMasterChiefCollection");
 				case 41:CPrintToChat(client, "%t", "Choose KingScar");
+				case 42:CPrintToChat(client, "%t", "Choose HalfLifeAlyx");				
+				case 43:CPrintToChat(client, "%t", "Choose Bachram");
+				case 44:CPrintToChat(client, "%t", "Choose GunmanTacoTruck");
+				case 45:CPrintToChat(client, "%t", "Choose EyeoftheDragon");
+				case 46:CPrintToChat(client, "%t", "Choose Drifter");
+				case 47:CPrintToChat(client, "%t", "Choose Bodacious");
+				case 48:CPrintToChat(client, "%t", "Choose MUDDFORCE");
+				case 49:CPrintToChat(client, "%t", "Choose NeoNoir");
 				
 				default: CPrintToChat(client, "%t","Choose Default");
 			}
@@ -291,7 +330,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 41 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 49 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
 		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
