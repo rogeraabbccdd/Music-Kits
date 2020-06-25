@@ -6,7 +6,7 @@
 
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "1.8.1"
+#define PLUGIN_VERSION "1.8"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL "https://github.com/rogeraabbccdd/Music-Kits"
 
@@ -89,7 +89,8 @@ public Action:Event_Player_Spawn(Handle:event, const String:name[], bool:dontBro
 	}
 }
 
-public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) {
+public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) 
+{
 	new client = GetClientOfUserId(GetEventInt(event, "userid"));
 	if(client)
 	{
@@ -200,7 +201,7 @@ public Action:Music(client, args)
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
 		Format(NeoNoir, sizeof(AllforDust), "%t", "Music Menu AllforDust");
-
+		
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
 		AddMenuItem(menu, "1", Default);
