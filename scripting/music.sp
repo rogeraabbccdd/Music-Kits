@@ -89,7 +89,8 @@ public Action:Event_Player_Spawn(Handle:event, const String:name[], bool:dontBro
 	}
 }
 
-public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) {
+public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) 
+{
 	new client = GetClientOfUserId(GetEventInt(event, "userid"));
 	if(client)
 	{
@@ -149,6 +150,7 @@ public Action:Music(client, args)
 		decl String: Bodacious[128];
 		decl String: MUDDFORCE[128];
 		decl String: NeoNoir[128];
+		decl String: AllforDust[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -198,7 +200,8 @@ public Action:Music(client, args)
 		Format(Bodacious, sizeof(Bodacious), "%t", "Music Menu Bodacious");
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
-
+		Format(NeoNoir, sizeof(AllforDust), "%t", "Music Menu AllforDust");
+		
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
 		AddMenuItem(menu, "1", Default);
@@ -249,9 +252,10 @@ public Action:Music(client, args)
 		AddMenuItem(menu, "47", Bodacious);
 		AddMenuItem(menu, "48", MUDDFORCE);
 		AddMenuItem(menu, "49", NeoNoir);
+		AddMenuItem(menu, "50", AllforDust);
 		
 		SetMenuExitButton(menu, true);
-		DisplayMenu(menu, client, 50);
+		DisplayMenu(menu, client, 51);
 	}
 	return Plugin_Handled;
 }
@@ -316,6 +320,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 47:CPrintToChat(client, "%t", "Choose Bodacious");
 				case 48:CPrintToChat(client, "%t", "Choose MUDDFORCE");
 				case 49:CPrintToChat(client, "%t", "Choose NeoNoir");
+				case 50:CPrintToChat(client, "%t", "Choose AllforDust");
 				
 				default: CPrintToChat(client, "%t","Choose Default");
 			}
@@ -330,7 +335,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 
 EquipMusic(client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 49 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 50 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
 		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
