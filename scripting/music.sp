@@ -200,7 +200,7 @@ public Action:Music(client, args)
 		Format(Bodacious, sizeof(Bodacious), "%t", "Music Menu Bodacious");
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
-		Format(NeoNoir, sizeof(AllforDust), "%t", "Music Menu AllforDust");
+		Format(AllforDust, sizeof(AllforDust), "%t", "Music Menu AllforDust");
 		
 		new Handle:menu = CreateMenu(MusicHandler);
 		SetMenuTitle(menu, "%t", "Music Menu Title");
