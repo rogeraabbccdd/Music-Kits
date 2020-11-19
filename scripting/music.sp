@@ -3,155 +3,132 @@
 #include <sdktools>
 #include <clientprefs>
 #include <kento_csgocolors>
-
 #pragma semicolon 1
-
-#define PLUGIN_VERSION "1.8"
+#pragma newdecls required
+#define PLUGIN_VERSION "1.9"
 #define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
 #define UPDATE_URL "https://github.com/rogeraabbccdd/Music-Kits"
-
-new Music_choice[MAXPLAYERS+1] = {1,...};
-new Handle:g_cookieMusic;
-
-new Handle:cvarmusikitspawnmsg = INVALID_HANDLE;
-
-public Plugin:myinfo =
+int Music_choice[MAXPLAYERS + 1] =  { 1, ... };
+Cookie g_cookieMusic;
+ConVar cvarmusikitspawnmsg = null;
+/* v1.9: northeaster & ByDexter & Emur */
+public Plugin myinfo = 
 {
-	name = PLUGIN_NAME,
-	author = "iEx Edited by Kento & crashzk",
-	description = "Allows you to choose any official valve music kit",
-	version = PLUGIN_VERSION,
-	url = UPDATE_URL,
+	name = PLUGIN_NAME, 
+	author = "iEx Edited by Kento & crashzk", 
+	description = "Allows you to choose any official valve music kit", 
+	version = PLUGIN_VERSION, 
+	url = UPDATE_URL, 
 }
-
-public OnPluginStart()
+public void OnPluginStart()
 {
 	LoadTranslations("common.phrases");
 	LoadTranslations("music.phrases");
-
-	g_cookieMusic = RegClientCookie("Music_choice", "", CookieAccess_Private);
-
+	g_cookieMusic = new Cookie("Music_choice", "", CookieAccess_Private);
 	HookEvent("player_spawn", Event_Player_Spawn, EventHookMode_Pre);
 	HookEvent("player_disconnect", Event_Disc);
-	
 	RegConsoleCmd("sm_music", Music, "Set Music in Game");
-	
+	RegConsoleCmd("sm_muzik", Music, "Set Music in Game (TR)");
 	cvarmusikitspawnmsg = CreateConVar("sm_musickit_spawnmsg", "1", "Enable or Disable Spawn Messages");
-
-	for (new i = 1; i <= MaxClients; i++)
+	for (int i = 1; i <= MaxClients; i++)if (IsClientInGame(i) && !IsFakeClient(i) && AreClientCookiesCached(i))
 	{
-		if (IsClientInGame(i) && !IsFakeClient(i) && AreClientCookiesCached(i))
-		{
-			OnClientCookiesCached(i);
-		}
+		OnClientCookiesCached(i);
 	}
 }
-
-public OnClientCookiesCached(client)
+public void OnClientCookiesCached(int client)
 {
-	new String:value[16];
-	GetClientCookie(client, g_cookieMusic, value, sizeof(value));
-	if(strlen(value) > 0) Music_choice[client] = StringToInt(value);
-
-	if (!(0 < client <= MaxClients)) return;
-	if (!IsClientInGame(client)) return;
-	if( IsFakeClient(client) ) return;
-	if(Music_choice[client] != 1)
-	{
+	char value[16];
+	g_cookieMusic.Get(client, value, sizeof(value)); /*GetClientCookie(client, g_cookieMusic, value, sizeof(value));*/
+	if (strlen(value) > 0)
+		Music_choice[client] = StringToInt(value);
+	if (!(0 < client <= MaxClients))
+		return;
+	if (!IsClientInGame(client))
+		return;
+	if (IsFakeClient(client))
+		return;
+	if (Music_choice[client] != 1)
 		EquipMusic(client);
-	}
 }
-
-public Action:PlayerSpawn(Handle:event, const String:name[], bool:dontBroadcast)
+public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 {
-	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	
+	int client = GetClientOfUserId(event.GetInt("userid"));
 	if (GetClientTeam(client) == 1 && !IsPlayerAlive(client))
-	{
-	return;
-	}
-	
+		return;
 	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
-	{	
 		CPrintToChat(client, "%t", "Spawn Message");
-	}
 }
-
-public Action:Event_Player_Spawn(Handle:event, const String:name[], bool:dontBroadcast)
+public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
 {
-	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	if (!(0 < client <= MaxClients)) return;
-	if ( !IsClientInGame(client) ) return;
-	if( IsFakeClient(client) ) return;
-	if(Music_choice[client] != 1)
-	{
+	int client = GetClientOfUserId(event.GetInt("userid"));
+	if (!(0 < client <= MaxClients))
+		return;
+	if (!IsClientInGame(client))
+		return;
+	if (IsFakeClient(client))
+		return;
+	if (Music_choice[client] != 1)
 		EquipMusic(client);
-	}
 }
-
-public Action:Event_Disc(Handle:event, const String:name[], bool:dontBroadcast) 
+public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
 {
-	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	if(client)
-	{
+	int client = GetClientOfUserId(event.GetInt("userid"));
+	if (client)
 		Music_choice[client] = 1;
-	}
 }
-
-public Action:Music(client, args)
+public Action Music(int client, int args)
 {
 	if (IsClientInGame(client))
 	{
-		decl String: Default[128];
-		decl String: Assault[128];
-		decl String: Sharpened[128];
-		decl String: Insurgency[128];
-		decl String: AD8[128];
-		decl String: HighNoon[128];
-		decl String: HeadDemolition[128];
-		decl String: DesertFire[128];
-		decl String: LNOE[128];
-		decl String: Metal[128];
-		decl String: Midnight[128];
-		decl String: IsoRhythm[128];
-		decl String: ForNoMankind[128];
-		decl String: HotlineMiami[128];
-		decl String: TotalDomination[128];
-		decl String: TheTalosPrincipal[128];
-		decl String: Battlepack[128];
-		decl String: MOLOTOV[128];
-		decl String: UberBlastoPhone[128];
-		decl String: HazardousEnvironments[128];
-		decl String: IIHeadshot[128];
-		decl String: The8BitKit[128];
-		decl String: IAm[128];
-		decl String: Diamonds[128];
-		decl String: Invasion[128];
-		decl String: LionsMouth[128];
-		decl String: SpongeFingerz[128];
-		decl String: Disgusting[128];
-		decl String: JavaHavanaFunkaloo[128];
-		decl String: MomentsCSGO[128];
-		decl String: Aggressive[128];
-		decl String: The_Good[128];
-		decl String: FREE[128];
-		decl String: Life[128];
-		decl String: Backbone[128];
-		decl String: GLA[128];
-		decl String: III[128];
-		decl String: EZ4ENCE[128];
-		decl String: TheMasterChiefCollection[128];
-		decl String: KingScar[128];
-		decl String: HalfLifeAlyx[128];
-		decl String: Bachram[128];
-		decl String: GunmanTacoTruck[128];
-		decl String: EyeoftheDragon[128];
-		decl String: Drifter[128];
-		decl String: Bodacious[128];
-		decl String: MUDDFORCE[128];
-		decl String: NeoNoir[128];
-		decl String: AllforDust[128];
-		
+		static char Default[128];
+		static char Assault[128];
+		static char Sharpened[128];
+		static char Insurgency[128];
+		static char AD8[128];
+		static char HighNoon[128];
+		static char HeadDemolition[128];
+		static char DesertFire[128];
+		static char LNOE[128];
+		static char Metal[128];
+		static char Midnight[128];
+		static char IsoRhythm[128];
+		static char ForNoMankind[128];
+		static char HotlineMiami[128];
+		static char TotalDomination[128];
+		static char TheTalosPrincipal[128];
+		static char Battlepack[128];
+		static char MOLOTOV[128];
+		static char UberBlastoPhone[128];
+		static char HazardousEnvironments[128];
+		static char IIHeadshot[128];
+		static char The8BitKit[128];
+		static char IAm[128];
+		static char Diamonds[128];
+		static char Invasion[128];
+		static char LionsMouth[128];
+		static char SpongeFingerz[128];
+		static char Disgusting[128];
+		static char JavaHavanaFunkaloo[128];
+		static char MomentsCSGO[128];
+		static char Aggressive[128];
+		static char The_Good[128];
+		static char FREE[128];
+		static char Life[128];
+		static char Backbone[128];
+		static char GLA[128];
+		static char III[128];
+		static char EZ4ENCE[128];
+		static char TheMasterChiefCollection[128];
+		static char KingScar[128];
+		static char HalfLifeAlyx[128];
+		static char Bachram[128];
+		static char GunmanTacoTruck[128];
+		static char EyeoftheDragon[128];
+		static char Drifter[128];
+		static char Bodacious[128];
+		static char MUDDFORCE[128];
+		static char NeoNoir[128];
+		static char AllforDust[128];
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
 		Format(Sharpened, sizeof(Sharpened), "%t", "Music Menu Sharpened");
@@ -201,77 +178,72 @@ public Action:Music(client, args)
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
 		Format(AllforDust, sizeof(AllforDust), "%t", "Music Menu AllforDust");
-		
-		new Handle:menu = CreateMenu(MusicHandler);
-		SetMenuTitle(menu, "%t", "Music Menu Title");
-		AddMenuItem(menu, "1", Default);
-		AddMenuItem(menu, "3", Assault);
-		AddMenuItem(menu, "4", Sharpened);
-		AddMenuItem(menu, "5", Insurgency);
-		AddMenuItem(menu, "6", AD8);
-		AddMenuItem(menu, "7", HighNoon);
-		AddMenuItem(menu, "8", HeadDemolition);
-		AddMenuItem(menu, "9", DesertFire);
-		AddMenuItem(menu, "10", LNOE);
-		AddMenuItem(menu, "11", Metal);
-		AddMenuItem(menu, "12", Midnight);
-		AddMenuItem(menu, "13", IsoRhythm);
-		AddMenuItem(menu, "14", ForNoMankind);
-		AddMenuItem(menu, "15", HotlineMiami);
-		AddMenuItem(menu, "16", TotalDomination);
-		AddMenuItem(menu, "17", TheTalosPrincipal);
-		AddMenuItem(menu, "18", Battlepack);
-		AddMenuItem(menu, "19", MOLOTOV);
-		AddMenuItem(menu, "20", UberBlastoPhone);
-		AddMenuItem(menu, "21", HazardousEnvironments);
-		AddMenuItem(menu, "22", IIHeadshot);
-		AddMenuItem(menu, "23", The8BitKit);
-		AddMenuItem(menu, "24", IAm);
-		AddMenuItem(menu, "25", Diamonds);
-		AddMenuItem(menu, "26", Invasion);
-		AddMenuItem(menu, "27", LionsMouth);
-		AddMenuItem(menu, "28", SpongeFingerz);
-		AddMenuItem(menu, "29", Disgusting);
-		AddMenuItem(menu, "30", JavaHavanaFunkaloo);
-		AddMenuItem(menu, "31", MomentsCSGO);
-		AddMenuItem(menu, "32", Aggressive);
-		AddMenuItem(menu, "33", The_Good);
-		AddMenuItem(menu, "34", FREE);
-		AddMenuItem(menu, "35", Life);
-		AddMenuItem(menu, "36", Backbone);
-		AddMenuItem(menu, "37", GLA);
-		AddMenuItem(menu, "38", III);
-		AddMenuItem(menu, "39", EZ4ENCE);
-		AddMenuItem(menu, "40", TheMasterChiefCollection);
-		AddMenuItem(menu, "41", KingScar);		
-		AddMenuItem(menu, "42", HalfLifeAlyx);		
-		AddMenuItem(menu, "43", Bachram);
-		AddMenuItem(menu, "44", GunmanTacoTruck);
-		AddMenuItem(menu, "45", EyeoftheDragon);
-		AddMenuItem(menu, "46", Drifter);
-		AddMenuItem(menu, "47", Bodacious);
-		AddMenuItem(menu, "48", MUDDFORCE);
-		AddMenuItem(menu, "49", NeoNoir);
-		AddMenuItem(menu, "50", AllforDust);
-		
-		SetMenuExitButton(menu, true);
-		DisplayMenu(menu, client, 51);
+		Menu menu = new Menu(MusicHandler);
+		menu.SetTitle("%t", "Music Menu Title");
+		menu.AddItem("1", Default);
+		menu.AddItem("3", Assault);
+		menu.AddItem("4", Sharpened);
+		menu.AddItem("5", Insurgency);
+		menu.AddItem("6", AD8);
+		menu.AddItem("7", HighNoon);
+		menu.AddItem("8", HeadDemolition);
+		menu.AddItem("9", DesertFire);
+		menu.AddItem("10", LNOE);
+		menu.AddItem("11", Metal);
+		menu.AddItem("12", Midnight);
+		menu.AddItem("13", IsoRhythm);
+		menu.AddItem("14", ForNoMankind);
+		menu.AddItem("15", HotlineMiami);
+		menu.AddItem("16", TotalDomination);
+		menu.AddItem("17", TheTalosPrincipal);
+		menu.AddItem("18", Battlepack);
+		menu.AddItem("19", MOLOTOV);
+		menu.AddItem("20", UberBlastoPhone);
+		menu.AddItem("21", HazardousEnvironments);
+		menu.AddItem("22", IIHeadshot);
+		menu.AddItem("23", The8BitKit);
+		menu.AddItem("24", IAm);
+		menu.AddItem("25", Diamonds);
+		menu.AddItem("26", Invasion);
+		menu.AddItem("27", LionsMouth);
+		menu.AddItem("28", SpongeFingerz);
+		menu.AddItem("29", Disgusting);
+		menu.AddItem("30", JavaHavanaFunkaloo);
+		menu.AddItem("31", MomentsCSGO);
+		menu.AddItem("32", Aggressive);
+		menu.AddItem("33", The_Good);
+		menu.AddItem("34", FREE);
+		menu.AddItem("35", Life);
+		menu.AddItem("36", Backbone);
+		menu.AddItem("37", GLA);
+		menu.AddItem("38", III);
+		menu.AddItem("39", EZ4ENCE);
+		menu.AddItem("40", TheMasterChiefCollection);
+		menu.AddItem("41", KingScar);
+		menu.AddItem("42", HalfLifeAlyx);
+		menu.AddItem("43", Bachram);
+		menu.AddItem("44", GunmanTacoTruck);
+		menu.AddItem("45", EyeoftheDragon);
+		menu.AddItem("46", Drifter);
+		menu.AddItem("47", Bodacious);
+		menu.AddItem("48", MUDDFORCE);
+		menu.AddItem("49", NeoNoir);
+		menu.AddItem("50", AllforDust);
+		menu.ExitButton = true;
+		menu.Display(client, 51);
 	}
 	return Plugin_Handled;
 }
-
-public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
+public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 {
-	switch(action)
+	switch (action)
 	{
 		case MenuAction_Select:
 		{
-			new String:info[4];
-			
+			char info[4];
 			GetMenuItem(menu, itemNum, info, sizeof(info));
 			SetMusic(client, StringToInt(info));
-			
-			switch(Music_choice[client])
+			switch (Music_choice[client])
 			{
 				case 3:CPrintToChat(client, "%t", "Choose Assault");
 				case 4:CPrintToChat(client, "%t", "Choose Sharpened");
@@ -312,7 +284,7 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 39:CPrintToChat(client, "%t", "Choose EZ4ENCE");
 				case 40:CPrintToChat(client, "%t", "Choose TheMasterChiefCollection");
 				case 41:CPrintToChat(client, "%t", "Choose KingScar");
-				case 42:CPrintToChat(client, "%t", "Choose HalfLifeAlyx");				
+				case 42:CPrintToChat(client, "%t", "Choose HalfLifeAlyx");
 				case 43:CPrintToChat(client, "%t", "Choose Bachram");
 				case 44:CPrintToChat(client, "%t", "Choose GunmanTacoTruck");
 				case 45:CPrintToChat(client, "%t", "Choose EyeoftheDragon");
@@ -321,31 +293,28 @@ public MusicHandler(Handle:menu, MenuAction:action, client, itemNum)
 				case 48:CPrintToChat(client, "%t", "Choose MUDDFORCE");
 				case 49:CPrintToChat(client, "%t", "Choose NeoNoir");
 				case 50:CPrintToChat(client, "%t", "Choose AllforDust");
-				
-				default: CPrintToChat(client, "%t","Choose Default");
+				default:CPrintToChat(client, "%t", "Choose Default");
 			}
 		}
-		
 		case MenuAction_End:
 		{
-			CloseHandle(menu);
+			delete menu;
 		}
 	}
 }
-
-EquipMusic(client)
+void EquipMusic(int client)
 {
 	if (Music_choice[client] < 0 || Music_choice[client] > 50 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
-	if(!GetEntProp(client, Prop_Send, "m_unMusicID")) return;
-		SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
+	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
+		return;
+	SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
 }
-
-SetMusic(client, index=1)
+void SetMusic(int client, int index = 1)
 {
 	Music_choice[client] = index;
 	EquipMusic(client);
-	decl String:strID[4];
+	static char strID[4];
 	IntToString(index, strID, sizeof(strID));
-	SetClientCookie(client, g_cookieMusic, strID);
-}
+	g_cookieMusic.Set(client, strID); /*SetClientCookie(client, g_cookieMusic, strID);*/
+} 
