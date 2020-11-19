@@ -38,17 +38,11 @@ public void OnPluginStart()
 public void OnClientCookiesCached(int client)
 {
 	char value[16];
-	g_cookieMusic.Get(client, value, sizeof(value)); /*GetClientCookie(client, g_cookieMusic, value, sizeof(value));*/
+	g_cookieMusic.Get(client, value, sizeof(value));
 	if (strlen(value) > 0)
 		Music_choice[client] = StringToInt(value);
-	if (!(0 < client <= MaxClients))
+	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
-	if (!IsClientInGame(client))
-		return;
-	if (IsFakeClient(client))
-		return;
-	if (Music_choice[client] != 1)
-		EquipMusic(client);
 }
 public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 {
@@ -61,14 +55,8 @@ public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
-	if (!(0 < client <= MaxClients))
+	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
-	if (!IsClientInGame(client))
-		return;
-	if (IsFakeClient(client))
-		return;
-	if (Music_choice[client] != 1)
-		EquipMusic(client);
 }
 public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
 {
@@ -80,55 +68,55 @@ public Action Music(int client, int args)
 {
 	if (IsClientInGame(client))
 	{
-		static char Default[128];
-		static char Assault[128];
-		static char Sharpened[128];
-		static char Insurgency[128];
-		static char AD8[128];
-		static char HighNoon[128];
-		static char HeadDemolition[128];
-		static char DesertFire[128];
-		static char LNOE[128];
-		static char Metal[128];
-		static char Midnight[128];
-		static char IsoRhythm[128];
-		static char ForNoMankind[128];
-		static char HotlineMiami[128];
-		static char TotalDomination[128];
-		static char TheTalosPrincipal[128];
-		static char Battlepack[128];
-		static char MOLOTOV[128];
-		static char UberBlastoPhone[128];
-		static char HazardousEnvironments[128];
-		static char IIHeadshot[128];
-		static char The8BitKit[128];
-		static char IAm[128];
-		static char Diamonds[128];
-		static char Invasion[128];
-		static char LionsMouth[128];
-		static char SpongeFingerz[128];
-		static char Disgusting[128];
-		static char JavaHavanaFunkaloo[128];
-		static char MomentsCSGO[128];
-		static char Aggressive[128];
-		static char The_Good[128];
-		static char FREE[128];
-		static char Life[128];
-		static char Backbone[128];
-		static char GLA[128];
-		static char III[128];
-		static char EZ4ENCE[128];
-		static char TheMasterChiefCollection[128];
-		static char KingScar[128];
-		static char HalfLifeAlyx[128];
-		static char Bachram[128];
-		static char GunmanTacoTruck[128];
-		static char EyeoftheDragon[128];
-		static char Drifter[128];
-		static char Bodacious[128];
-		static char MUDDFORCE[128];
-		static char NeoNoir[128];
-		static char AllforDust[128];
+		static char Default[128], 
+		Assault[128], 
+		Sharpened[128], 
+		Insurgency[128], 
+		AD8[128], 
+		HighNoon[128], 
+		HeadDemolition[128], 
+		DesertFire[128], 
+		LNOE[128], 
+		Metal[128], 
+		Midnight[128], 
+		IsoRhythm[128], 
+		ForNoMankind[128], 
+		HotlineMiami[128], 
+		TotalDomination[128], 
+		TheTalosPrincipal[128], 
+		Battlepack[128], 
+		MOLOTOV[128], 
+		UberBlastoPhone[128], 
+		HazardousEnvironments[128], 
+		IIHeadshot[128], 
+		The8BitKit[128], 
+		IAm[128], 
+		Diamonds[128], 
+		Invasion[128], 
+		LionsMouth[128], 
+		SpongeFingerz[128], 
+		Disgusting[128], 
+		JavaHavanaFunkaloo[128], 
+		MomentsCSGO[128], 
+		Aggressive[128], 
+		The_Good[128], 
+		FREE[128], 
+		Life[128], 
+		Backbone[128], 
+		GLA[128], 
+		III[128], 
+		EZ4ENCE[128], 
+		TheMasterChiefCollection[128], 
+		KingScar[128], 
+		HalfLifeAlyx[128], 
+		Bachram[128], 
+		GunmanTacoTruck[128], 
+		EyeoftheDragon[128], 
+		Drifter[128], 
+		Bodacious[128], 
+		MUDDFORCE[128], 
+		NeoNoir[128], 
+		AllforDust[128];
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
 		Format(Sharpened, sizeof(Sharpened), "%t", "Music Menu Sharpened");
@@ -316,5 +304,5 @@ void SetMusic(int client, int index = 1)
 	EquipMusic(client);
 	static char strID[4];
 	IntToString(index, strID, sizeof(strID));
-	g_cookieMusic.Set(client, strID); /*SetClientCookie(client, g_cookieMusic, strID);*/
+	g_cookieMusic.Set(client, strID);
 } 
