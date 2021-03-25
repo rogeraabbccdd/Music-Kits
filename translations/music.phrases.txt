@@ -457,6 +457,33 @@
 		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}Amon Tobin | All for Dust {NORMAL}了!"
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Amon Tobin | All for Dust {NORMAL}seçildi!"
 	}
+	
+	"Choose DarkenKorb"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}DARREN KORB - HADES{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}DARREN KORB - HADES {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGE}DARREN KORB - HADES {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}DARREN KORB - HADES {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}DARREN KORB - HADES {NORMAL}seçildi!"
+	}
+	
+	"Choose TheLowlifePack"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}Neck Deep - The Lowlife Pack{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}Neck Deep - The Lowlife Pack {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGE}Neck Deep - The Lowlife Pack {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}Neck Deep - The Lowlife Pack {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Neck Deep - The Lowlife Pack {NORMAL}seçildi!"
+	}
+	
+	"Choose Chain$awLxadxut"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT.{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}seçildi!"
+	}
 
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -909,5 +936,32 @@
 		"pt"		"Amon Tobin | All for Dust"
 		"chi"		"Amon Tobin | All for Dust"
 		"tr"		"Amon Tobin | All for Dust"
+	}
+	
+	"Music Menu DarkenKorb"
+	{
+		"zho"		"DARREN KORB - HADES"
+		"en"		"DARREN KORB - HADES"
+		"pt"		"DARREN KORB - HADES"
+		"chi"		"DARREN KORB - HADES"
+		"tr"		"DARREN KORB - HADES"
+	}
+	
+	"Music Menu TheLowlifePack"
+	{
+		"zho"		"Neck Deep - The Lowlife Pack"
+		"en"		"Neck Deep - The Lowlife Pack"
+		"pt"		"Neck Deep - The Lowlife Pack"
+		"chi"		"Neck Deep - The Lowlife Pack"
+		"tr"		"Neck Deep - The Lowlife Pack"
+	}
+	
+	"Music Menu Chain$awLxadxut"
+	{
+		"zho"		"Scarlxrd - CHAIN$AW.LXADXUT."
+		"en"		"Scarlxrd - CHAIN$AW.LXADXUT."
+		"pt"		"Scarlxrd - CHAIN$AW.LXADXUT."
+		"chi"		"Scarlxrd - CHAIN$AW.LXADXUT."
+		"tr"		"Scarlxrd - CHAIN$AW.LXADXUT."
 	}
 }

@@ -127,7 +127,10 @@ public Action Music(int client, int args)
 		Bodacious[128], 
 		MUDDFORCE[128], 
 		NeoNoir[128], 
-		AllforDust[128];
+		AllforDust[128],
+		DarkenKorb[128],
+		TheLowlifePack[128],
+		Chain$awLxadxut[128];		
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -178,9 +181,13 @@ public Action Music(int client, int args)
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
 		Format(AllforDust, sizeof(AllforDust), "%t", "Music Menu AllforDust");
+		Format(DarkenKorb, sizeof(DarkenKorb), "%t", "Music Menu DarkenKorb");
+		Format(TheLowlifePack, sizeof(TheLowlifePack), "%t", "Music Menu TheLowlifePack");
+		Format(Chain$awLxadxut, sizeof(Chain$awLxadxut), "%t", "Music Menu Chain$awLxadxut");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
+		
 		menu.AddItem("1", Default);
 		menu.AddItem("3", Assault);
 		menu.AddItem("4", Sharpened);
@@ -229,9 +236,13 @@ public Action Music(int client, int args)
 		menu.AddItem("47", Bodacious);
 		menu.AddItem("48", MUDDFORCE);
 		menu.AddItem("49", NeoNoir);
-		menu.AddItem("50", AllforDust);
+		menu.AddItem("50", AllforDust);		
+		menu.AddItem("51", DarkenKorb);
+		menu.AddItem("52", TheLowlifePack);
+		menu.AddItem("53", Chain$awLxadxut);
+		
 		menu.ExitButton = true;
-		menu.Display(client, 51);
+		menu.Display(client, 54);
 	}
 	return Plugin_Handled;
 }
@@ -294,7 +305,11 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 47:CPrintToChat(client, "%t", "Choose Bodacious");
 				case 48:CPrintToChat(client, "%t", "Choose MUDDFORCE");
 				case 49:CPrintToChat(client, "%t", "Choose NeoNoir");
-				case 50:CPrintToChat(client, "%t", "Choose AllforDust");
+				case 50:CPrintToChat(client, "%t", "Choose AllforDust");				
+				case 51:CPrintToChat(client, "%t", "Choose DarkenKorb");
+				case 52:CPrintToChat(client, "%t", "Choose TheLowlifePack");
+				case 53:CPrintToChat(client, "%t", "Choose Chain$awLxadxut");
+				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
 		}
@@ -307,7 +322,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 
 void EquipMusic(int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 50 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 53 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;
