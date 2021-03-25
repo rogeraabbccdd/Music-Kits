@@ -3,38 +3,46 @@
 #include <sdktools>
 #include <clientprefs>
 #include <kento_csgocolors>
+
 #pragma semicolon 1
 #pragma newdecls required
-#define PLUGIN_VERSION "1.9"
-#define PLUGIN_NAME "[CS:GO] Music Kits [Menu]"
-#define UPDATE_URL "https://github.com/rogeraabbccdd/Music-Kits"
+
 int Music_choice[MAXPLAYERS + 1] =  { 1, ... };
+
 Cookie g_cookieMusic;
 ConVar cvarmusikitspawnmsg = null;
-/* v1.9: northeaster & ByDexter & Emur */
-public Plugin myinfo = 
+
+public Plugin myinfo =
 {
-	name = PLUGIN_NAME, 
-	author = "iEx Edited by Kento & crashzk", 
-	description = "Allows you to choose any official valve music kit", 
-	version = PLUGIN_VERSION, 
-	url = UPDATE_URL, 
+	name = "[CS:GO] Music Kits Valve",
+	author = "iEx, Kento, crashzk, northeaster, ByDexter, Emur",
+	description = "Allows you to choose any official valve music kits",
+	version = "1.9",
+	url = "https://github.com/rogeraabbccdd/Music-Kits",
 }
+
 public void OnPluginStart()
 {
-	LoadTranslations("common.phrases");
 	LoadTranslations("music.phrases");
+	LoadTranslations("common.phrases");
+	
 	g_cookieMusic = new Cookie("Music_choice", "", CookieAccess_Private);
+	
 	HookEvent("player_spawn", Event_Player_Spawn, EventHookMode_Pre);
 	HookEvent("player_disconnect", Event_Disc);
+	
 	RegConsoleCmd("sm_music", Music, "Set Music in Game");
-	RegConsoleCmd("sm_muzik", Music, "Set Music in Game (TR)");
-	cvarmusikitspawnmsg = CreateConVar("sm_musickit_spawnmsg", "1", "Enable or Disable Spawn Messages");
+	
+	cvarmusikitspawnmsg = CreateConVar("sm_musickit_spawnmsg", "0", "Enable or Disable Spawn Messages");
+	
+	AutoExecConfig(true, "csgo_musickit");
+	
 	for (int i = 1; i <= MaxClients; i++)if (IsClientInGame(i) && !IsFakeClient(i) && AreClientCookiesCached(i))
 	{
 		OnClientCookiesCached(i);
 	}
 }
+
 public void OnClientCookiesCached(int client)
 {
 	char value[16];
@@ -44,6 +52,7 @@ public void OnClientCookiesCached(int client)
 	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
 }
+
 public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
@@ -52,12 +61,14 @@ public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
 	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
 		CPrintToChat(client, "%t", "Spawn Message");
 }
+
 public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
 }
+
 public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
@@ -117,6 +128,7 @@ public Action Music(int client, int args)
 		MUDDFORCE[128], 
 		NeoNoir[128], 
 		AllforDust[128];
+		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
 		Format(Sharpened, sizeof(Sharpened), "%t", "Music Menu Sharpened");
@@ -166,6 +178,7 @@ public Action Music(int client, int args)
 		Format(MUDDFORCE, sizeof(MUDDFORCE), "%t", "Music Menu MUDDFORCE");
 		Format(NeoNoir, sizeof(NeoNoir), "%t", "Music Menu NeoNoir");
 		Format(AllforDust, sizeof(AllforDust), "%t", "Music Menu AllforDust");
+		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
 		menu.AddItem("1", Default);
@@ -222,6 +235,7 @@ public Action Music(int client, int args)
 	}
 	return Plugin_Handled;
 }
+
 public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 {
 	switch (action)
@@ -290,6 +304,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 		}
 	}
 }
+
 void EquipMusic(int client)
 {
 	if (Music_choice[client] < 0 || Music_choice[client] > 50 || Music_choice[client] == 2)
@@ -298,6 +313,7 @@ void EquipMusic(int client)
 		return;
 	SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
 }
+
 void SetMusic(int client, int index = 1)
 {
 	Music_choice[client] = index;
@@ -305,4 +321,4 @@ void SetMusic(int client, int index = 1)
 	static char strID[4];
 	IntToString(index, strID, sizeof(strID));
 	g_cookieMusic.Set(client, strID);
-} 
+}
