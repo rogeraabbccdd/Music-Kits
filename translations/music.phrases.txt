@@ -476,7 +476,7 @@
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Neck Deep - The Lowlife Pack {NORMAL}seçildi!"
 	}
 	
-	"Choose Chain$awLxadxut"
+	"Choose ChainSawLxadxut"
 	{
 		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT.{NORMAL}了!"
 		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}in game now!"
@@ -956,7 +956,7 @@
 		"tr"		"Neck Deep - The Lowlife Pack"
 	}
 	
-	"Music Menu Chain$awLxadxut"
+	"Music Menu ChainSawLxadxut"
 	{
 		"zho"		"Scarlxrd - CHAIN$AW.LXADXUT."
 		"en"		"Scarlxrd - CHAIN$AW.LXADXUT."

@@ -17,7 +17,7 @@ public Plugin myinfo =
 	name = "[CS:GO] Music Kits Valve",
 	author = "iEx, Kento, crashzk, northeaster, ByDexter, Emur",
 	description = "Allows you to choose any official valve music kits",
-	version = "1.9",
+	version = "1.9.1",
 	url = "https://github.com/rogeraabbccdd/Music-Kits",
 }
 
@@ -130,7 +130,7 @@ public Action Music(int client, int args)
 		AllforDust[128],
 		DarkenKorb[128],
 		TheLowlifePack[128],
-		Chain$awLxadxut[128];		
+		ChainSawLxadxut[128];		
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -183,7 +183,7 @@ public Action Music(int client, int args)
 		Format(AllforDust, sizeof(AllforDust), "%t", "Music Menu AllforDust");
 		Format(DarkenKorb, sizeof(DarkenKorb), "%t", "Music Menu DarkenKorb");
 		Format(TheLowlifePack, sizeof(TheLowlifePack), "%t", "Music Menu TheLowlifePack");
-		Format(Chain$awLxadxut, sizeof(Chain$awLxadxut), "%t", "Music Menu Chain$awLxadxut");
+		Format(ChainSawLxadxut, sizeof(ChainSawLxadxut), "%t", "Music Menu ChainSawLxadxut");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
@@ -239,7 +239,7 @@ public Action Music(int client, int args)
 		menu.AddItem("50", AllforDust);		
 		menu.AddItem("51", DarkenKorb);
 		menu.AddItem("52", TheLowlifePack);
-		menu.AddItem("53", Chain$awLxadxut);
+		menu.AddItem("53", ChainSawLxadxut);
 		
 		menu.ExitButton = true;
 		menu.Display(client, 54);
@@ -308,7 +308,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 50:CPrintToChat(client, "%t", "Choose AllforDust");				
 				case 51:CPrintToChat(client, "%t", "Choose DarkenKorb");
 				case 52:CPrintToChat(client, "%t", "Choose TheLowlifePack");
-				case 53:CPrintToChat(client, "%t", "Choose Chain$awLxadxut");
+				case 53:CPrintToChat(client, "%t", "Choose ChainSawLxadxut");
 				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
