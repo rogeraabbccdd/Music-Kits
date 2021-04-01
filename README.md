@@ -1,14 +1,11 @@
 # Music Kits
-Allow player to use official valve music kit in game.
-
-## Original Plugin
-https://forums.alliedmods.net/showthread.php?p=2261789#post2261789
+Allow player to use official valve music kitk in game.
 
 ## Commands
-- `sm_music` - Set music kit in Game.
+- **`sm_music`** - Set music kit valve in game.
 
 ## Credits
-- iEx - Who make the original plugin.
+- iEx - Who make the [original plugin](https://forums.alliedmods.net/showthread.php?t=252260).
 - lowie - Who make the original plugin.
 - Kento - Add more music kits.
 - LemonPAKA - Add EZ4ENCE & Simplified Chinese translate.
