@@ -79,58 +79,64 @@ public Action Music(int client, int args)
 {
 	if (IsClientInGame(client))
 	{
-		static char Default[128], 
-		Assault[128], 
-		Sharpened[128], 
-		Insurgency[128], 
-		AD8[128], 
-		HighNoon[128], 
-		HeadDemolition[128], 
-		DesertFire[128], 
-		LNOE[128], 
-		Metal[128], 
-		Midnight[128], 
-		IsoRhythm[128], 
-		ForNoMankind[128], 
-		HotlineMiami[128], 
-		TotalDomination[128], 
-		TheTalosPrincipal[128], 
-		Battlepack[128], 
-		MOLOTOV[128], 
-		UberBlastoPhone[128], 
-		HazardousEnvironments[128], 
-		IIHeadshot[128], 
-		The8BitKit[128], 
-		IAm[128], 
-		Diamonds[128], 
-		Invasion[128], 
-		LionsMouth[128], 
-		SpongeFingerz[128], 
-		Disgusting[128], 
-		JavaHavanaFunkaloo[128], 
-		MomentsCSGO[128], 
-		Aggressive[128], 
-		The_Good[128], 
-		FREE[128], 
-		Life[128], 
-		Backbone[128], 
-		GLA[128], 
-		III[128], 
-		EZ4ENCE[128], 
-		TheMasterChiefCollection[128], 
-		KingScar[128], 
-		HalfLifeAlyx[128], 
-		Bachram[128], 
-		GunmanTacoTruck[128], 
-		EyeoftheDragon[128], 
-		Drifter[128], 
-		Bodacious[128], 
-		MUDDFORCE[128], 
-		NeoNoir[128], 
+		static char Default[128],
+		Assault[128],
+		Sharpened[128],
+		Insurgency[128],
+		AD8[128],
+		HighNoon[128],
+		HeadDemolition[128],
+		DesertFire[128],
+		LNOE[128],
+		Metal[128],
+		Midnight[128],
+		IsoRhythm[128],
+		ForNoMankind[128],
+		HotlineMiami[128],
+		TotalDomination[128],
+		TheTalosPrincipal[128],
+		Battlepack[128],
+		MOLOTOV[128],
+		UberBlastoPhone[128],
+		HazardousEnvironments[128],
+		IIHeadshot[128],
+		The8BitKit[128],
+		IAm[128],
+		Diamonds[128],
+		Invasion[128],
+		LionsMouth[128],
+		SpongeFingerz[128],
+		Disgusting[128],
+		JavaHavanaFunkaloo[128],
+		MomentsCSGO[128],
+		Aggressive[128],
+		The_Good[128],
+		FREE[128],
+		Life[128],
+		Backbone[128],
+		GLA[128],
+		III[128],
+		EZ4ENCE[128],
+		TheMasterChiefCollection[128],
+		KingScar[128],
+		HalfLifeAlyx[128],
+		Bachram[128],
+		GunmanTacoTruck[128],
+		EyeoftheDragon[128],
+		Drifter[128],
+		Bodacious[128],
+		MUDDFORCE[128],
+		NeoNoir[128],
 		AllforDust[128],
 		DarkenKorb[128],
 		TheLowlifePack[128],
-		ChainSawLxadxut[128];		
+		ChainSawLxadxut[128],
+		FreakyDNAVici[128],
+		SarahSchachnerKOLIBRI[128],
+		AustinWintoryMochaPetal[128],
+		JesseHarlinAstroBellum[128],
+		ChipzelYellowMagic[128],
+		LauraShigiharaWorkHardPlayHard[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -184,6 +190,12 @@ public Action Music(int client, int args)
 		Format(DarkenKorb, sizeof(DarkenKorb), "%t", "Music Menu DarkenKorb");
 		Format(TheLowlifePack, sizeof(TheLowlifePack), "%t", "Music Menu TheLowlifePack");
 		Format(ChainSawLxadxut, sizeof(ChainSawLxadxut), "%t", "Music Menu ChainSawLxadxut");
+		Format(FreakyDNAVici, sizeof(FreakyDNAVici), "%t", "Music Menu FreakyDNAVici");
+		Format(SarahSchachnerKOLIBRI, sizeof(SarahSchachnerKOLIBRI), "%t", "Music Menu SarahSchachnerKOLIBRI");
+		Format(AustinWintoryMochaPetal, sizeof(AustinWintoryMochaPetal), "%t", "Music Menu AustinWintoryMochaPetal");
+		Format(JesseHarlinAstroBellum, sizeof(JesseHarlinAstroBellum), "%t", "Music Menu JesseHarlinAstroBellum");
+		Format(ChipzelYellowMagic, sizeof(ChipzelYellowMagic), "%t", "Music Menu ChipzelYellowMagic");
+		Format(LauraShigiharaWorkHardPlayHard, sizeof(LauraShigiharaWorkHardPlayHard), "%t", "Music Menu LauraShigiharaWorkHardPlayHard");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
@@ -236,13 +248,20 @@ public Action Music(int client, int args)
 		menu.AddItem("47", Bodacious);
 		menu.AddItem("48", MUDDFORCE);
 		menu.AddItem("49", NeoNoir);
-		menu.AddItem("50", AllforDust);		
+		menu.AddItem("50", AllforDust);
 		menu.AddItem("51", DarkenKorb);
 		menu.AddItem("52", TheLowlifePack);
 		menu.AddItem("53", ChainSawLxadxut);
 		
+		menu.AddItem("54", FreakyDNAVici);
+		menu.AddItem("55", SarahSchachnerKOLIBRI);
+		menu.AddItem("56", AustinWintoryMochaPetal);
+		menu.AddItem("57", JesseHarlinAstroBellum);
+		menu.AddItem("58", ChipzelYellowMagic);
+		menu.AddItem("59", LauraShigiharaWorkHardPlayHard);
+		
 		menu.ExitButton = true;
-		menu.Display(client, 54);
+		menu.Display(client, 60);
 	}
 	return Plugin_Handled;
 }
@@ -305,10 +324,16 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 47:CPrintToChat(client, "%t", "Choose Bodacious");
 				case 48:CPrintToChat(client, "%t", "Choose MUDDFORCE");
 				case 49:CPrintToChat(client, "%t", "Choose NeoNoir");
-				case 50:CPrintToChat(client, "%t", "Choose AllforDust");				
+				case 50:CPrintToChat(client, "%t", "Choose AllforDust");
 				case 51:CPrintToChat(client, "%t", "Choose DarkenKorb");
 				case 52:CPrintToChat(client, "%t", "Choose TheLowlifePack");
 				case 53:CPrintToChat(client, "%t", "Choose ChainSawLxadxut");
+				case 54:CPrintToChat(client, "%t", "Choose FreakyDNAVici");
+				case 55:CPrintToChat(client, "%t", "Choose SarahSchachnerKOLIBRI");
+				case 56:CPrintToChat(client, "%t", "Choose AustinWintoryMochaPetal");
+				case 57:CPrintToChat(client, "%t", "Choose JesseHarlinAstroBellum");
+				case 58:CPrintToChat(client, "%t", "Choose ChipzelYellowMagic");
+				case 59:CPrintToChat(client, "%t", "Choose LauraShigiharaWorkHardPlayHard");
 				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
@@ -322,7 +347,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 
 void EquipMusic(int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 53 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 59 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;
