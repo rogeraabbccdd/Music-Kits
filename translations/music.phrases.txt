@@ -485,6 +485,60 @@
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Scarlxrd - CHAIN$AW.LXADXUT. {NORMAL}seçildi!"
 	}
 
+	"Choose FreakyDNAVici"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {DARKRED}Freaky DNA, Vici{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {DARKRED}Freaky DNA, Vici{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {DARKRED}Freaky DNA, Vici{NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {DARKRED}Freaky DNA, Vici{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {DARKRED}Freaky DNA, Vici{NORMAL}seçildi!"
+	}
+
+	"Choose SarahSchachnerKOLIBRI"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {BLUE}Sarah Schachner, KOLIBRI{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {BLUE}Sarah Schachner, KOLIBRI{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {BLUE}Sarah Schachner, KOLIBRI{NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {BLUE}Sarah Schachner, KOLIBRI{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {BLUE}Sarah Schachner, KOLIBRI{NORMAL}seçildi!"
+	}
+
+	"Choose AustinWintoryMochaPetal"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {GREEN}Austin Wintory, Mocha Petal{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {GREEN}Austin Wintory, Mocha Petal{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {GREEN}Austin Wintory, Mocha PetalNORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {GREEN}Austin Wintory, Mocha Petal{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {GREEN}Austin Wintory, Mocha Petal{NORMAL}seçildi!"
+	}
+
+	"Choose JesseHarlinAstroBellum"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {PURPLE}Jesse Harlin, Astro Bellum{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {PURPLE}Jesse Harlin, Astro Bellum{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PURPLE}Jesse Harlin, Astro Bellum{NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PURPLE}Jesse Harlin, Astro Bellum{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PURPLE}Jesse Harlin, Astro Bellum{NORMAL}seçildi!"
+	}
+
+	"Choose ChipzelYellowMagic"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {YELLOW}Chipzel, ~Yellow Magic~{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {YELLOW}Chipzel, ~Yellow Magic~{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {YELLOW}Chipzel, ~Yellow Magic~{NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {YELLOW}Chipzel, ~Yellow Magic~{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {YELLOW}Chipzel, ~Yellow Magic~{NORMAL}seçildi!"
+	}
+
+	"Choose LauraShigiharaWorkHardPlayHard"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}seçildi!"
+	}
+
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
 
@@ -963,5 +1017,59 @@
 		"pt"		"Scarlxrd - CHAIN$AW.LXADXUT."
 		"chi"		"Scarlxrd - CHAIN$AW.LXADXUT."
 		"tr"		"Scarlxrd - CHAIN$AW.LXADXUT."
+	}
+
+	"Music Menu FreakyDNAVici"
+	{
+		"zho"		"Freaky DNA, Vici"
+		"en"		"Freaky DNA, Vici"
+		"pt"		"Freaky DNA, Vici"
+		"chi"		"Freaky DNA, Vici"
+		"tr"		"Freaky DNA, Vici"
+	}
+
+	"Music Menu SarahSchachnerKOLIBRI"
+	{
+		"zho"		"Sarah Schachner, KOLIBRI"
+		"en"		"Sarah Schachner, KOLIBRI"
+		"pt"		"Sarah Schachner, KOLIBRI"
+		"chi"		"Sarah Schachner, KOLIBRI"
+		"tr"		"Sarah Schachner, KOLIBRI"
+	}
+
+	"Music Menu AustinWintoryMochaPetal"
+	{
+		"zho"		"Austin Wintory, Mocha Petal"
+		"en"		"Austin Wintory, Mocha Petal"
+		"pt"		"Austin Wintory, Mocha Petal"
+		"chi"		"Austin Wintory, Mocha Petal."
+		"tr"		"Austin Wintory, Mocha Petal"
+	}
+
+	"Music Menu JesseHarlinAstroBellum"
+	{
+		"zho"		"Jesse Harlin, Astro Bellum"
+		"en"		"Jesse Harlin, Astro Bellum"
+		"pt"		"Jesse Harlin, Astro Bellum"
+		"chi"		"Jesse Harlin, Astro Bellum"
+		"tr"		"Jesse Harlin, Astro Bellum"
+	}
+
+	"Music Menu ChipzelYellowMagic"
+	{
+		"zho"		"Chipzel, ~Yellow Magic~"
+		"en"		"Chipzel, ~Yellow Magic~"
+		"pt"		"Chipzel, ~Yellow Magic~"
+		"chi"		"Chipzel, ~Yellow Magic~"
+		"tr"		"Chipzel, ~Yellow Magic~"
+	}
+
+	"Music Menu LauraShigiharaWorkHardPlayHard"
+	{
+		"zho"		"Laura Shigihara: Work Hard, Play Hard"
+		"en"		"Laura Shigihara: Work Hard, Play Hard"
+		"pt"		"Laura Shigihara: Work Hard, Play Hard"
+		"chi"		"Laura Shigihara: Work Hard, Play Hard"
+		"tr"		"Laura Shigihara: Work Hard, Play Hard"
 	}
 }
