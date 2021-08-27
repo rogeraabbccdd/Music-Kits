@@ -1,5 +1,5 @@
 # Music Kits
-Allow player to use official valve music kitk in game.
+Allow player to use official valve music kit in game.
 
 ## Commands
 - **`sm_music`** - Set music kit valve in game.
