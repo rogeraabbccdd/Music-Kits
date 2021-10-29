@@ -136,7 +136,8 @@ public Action Music(int client, int args)
 		AustinWintoryMochaPetal[128],
 		JesseHarlinAstroBellum[128],
 		ChipzelYellowMagic[128],
-		LauraShigiharaWorkHardPlayHard[128];
+		LauraShigiharaWorkHardPlayHard[128],
+		BbnoUMad[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -196,6 +197,7 @@ public Action Music(int client, int args)
 		Format(JesseHarlinAstroBellum, sizeof(JesseHarlinAstroBellum), "%t", "Music Menu JesseHarlinAstroBellum");
 		Format(ChipzelYellowMagic, sizeof(ChipzelYellowMagic), "%t", "Music Menu ChipzelYellowMagic");
 		Format(LauraShigiharaWorkHardPlayHard, sizeof(LauraShigiharaWorkHardPlayHard), "%t", "Music Menu LauraShigiharaWorkHardPlayHard");
+		Format(BbnoUMad, sizeof(BbnoUMad), "%t", "Music Menu BbnoUMad");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
@@ -252,16 +254,16 @@ public Action Music(int client, int args)
 		menu.AddItem("51", DarkenKorb);
 		menu.AddItem("52", TheLowlifePack);
 		menu.AddItem("53", ChainSawLxadxut);
-		
 		menu.AddItem("54", FreakyDNAVici);
 		menu.AddItem("55", SarahSchachnerKOLIBRI);
 		menu.AddItem("56", AustinWintoryMochaPetal);
 		menu.AddItem("57", JesseHarlinAstroBellum);
 		menu.AddItem("58", ChipzelYellowMagic);
 		menu.AddItem("59", LauraShigiharaWorkHardPlayHard);
+		menu.AddItem("60", BbnoUMad);
 		
 		menu.ExitButton = true;
-		menu.Display(client, 60);
+		menu.Display(client, 61);
 	}
 	return Plugin_Handled;
 }
@@ -334,6 +336,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 57:CPrintToChat(client, "%t", "Choose JesseHarlinAstroBellum");
 				case 58:CPrintToChat(client, "%t", "Choose ChipzelYellowMagic");
 				case 59:CPrintToChat(client, "%t", "Choose LauraShigiharaWorkHardPlayHard");
+				case 60:CPrintToChat(client, "%t", "Choose BbnoUMad");
 				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
@@ -347,7 +350,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 
 void EquipMusic(int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 59 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 60 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;

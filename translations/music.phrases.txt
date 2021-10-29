@@ -538,6 +538,15 @@
 		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}了!"
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}seçildi!"
 	}
+	
+	"Choose BbnoUMad"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {DARKRED}bbno$ | u mad! {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {DARKRED}bbno$ | u mad! {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {DARKRED}bbno$ | u mad! {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {DARKRED}bbno$ | u mad! {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {DARKRED}bbno$ | u mad! {NORMAL}seçildi!"
+	}
 
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -1071,5 +1080,14 @@
 		"pt"		"Laura Shigihara: Work Hard, Play Hard"
 		"chi"		"Laura Shigihara: Work Hard, Play Hard"
 		"tr"		"Laura Shigihara: Work Hard, Play Hard"
+	}
+	
+	"Music Menu BbnoUMad"
+	{
+		"zho"		"bbno$ | u mad!"
+		"en"		"bbno$ | u mad!"
+		"pt"		"bbno$ | u mad!"
+		"chi"		"bbno$ | u mad!"
+		"tr"		"bbno$ | u mad!"
 	}
 }
