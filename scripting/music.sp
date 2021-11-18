@@ -7,9 +7,10 @@
 #pragma semicolon 1
 #pragma newdecls required
 
-int Music_choice[MAXPLAYERS + 1] =  { 1, ... };
+int Music_choice [MAXPLAYERS + 1] =  { 1, ... };
 
 Cookie g_cookieMusic;
+
 ConVar cvarmusikitspawnmsg = null;
 
 public Plugin myinfo =
@@ -47,35 +48,42 @@ public void OnClientCookiesCached(int client)
 {
 	char value[16];
 	g_cookieMusic.Get(client, value, sizeof(value));
+	
 	if (strlen(value) > 0)
 		Music_choice[client] = StringToInt(value);
+		
 	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
 }
 
-public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
+public Action PlayerSpawn (Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
+	
 	if (GetClientTeam(client) == 1 && !IsPlayerAlive(client))
 		return;
+		
 	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
 		CPrintToChat(client, "%t", "Spawn Message");
 }
 
-public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
+public Action Event_Player_Spawn (Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
+	
 	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
 		return;
 }
 
-public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
+public Action Event_Disc (Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
+	
 	if (client)
 		Music_choice[client] = 1;
 }
-public Action Music(int client, int args)
+
+public Action Music (int client, int args)
 {
 	if (IsClientInGame(client))
 	{
@@ -137,7 +145,8 @@ public Action Music(int client, int args)
 		JesseHarlinAstroBellum[128],
 		ChipzelYellowMagic[128],
 		LauraShigiharaWorkHardPlayHard[128],
-		BbnoUMad[128];
+		BbnoUMad[128],
+		FlashbangDance[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -198,10 +207,10 @@ public Action Music(int client, int args)
 		Format(ChipzelYellowMagic, sizeof(ChipzelYellowMagic), "%t", "Music Menu ChipzelYellowMagic");
 		Format(LauraShigiharaWorkHardPlayHard, sizeof(LauraShigiharaWorkHardPlayHard), "%t", "Music Menu LauraShigiharaWorkHardPlayHard");
 		Format(BbnoUMad, sizeof(BbnoUMad), "%t", "Music Menu BbnoUMad");
+		Format(FlashbangDance, sizeof(FlashbangDance), "%t", "Music Menu FlashbangDance");
 		
 		Menu menu = new Menu(MusicHandler);
-		menu.SetTitle("%t", "Music Menu Title");
-		
+		menu.SetTitle("%t", "Music Menu Title");		
 		menu.AddItem("1", Default);
 		menu.AddItem("3", Assault);
 		menu.AddItem("4", Sharpened);
@@ -261,14 +270,14 @@ public Action Music(int client, int args)
 		menu.AddItem("58", ChipzelYellowMagic);
 		menu.AddItem("59", LauraShigiharaWorkHardPlayHard);
 		menu.AddItem("60", BbnoUMad);
-		
+		menu.AddItem("61", FlashbangDance);		
 		menu.ExitButton = true;
-		menu.Display(client, 61);
+		menu.Display(client, 62);
 	}
 	return Plugin_Handled;
 }
 
-public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
+public int MusicHandler (Menu menu, MenuAction action, int client, int itemNum)
 {
 	switch (action)
 	{
@@ -277,7 +286,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 			char info[4];
 			GetMenuItem(menu, itemNum, info, sizeof(info));
 			SetMusic(client, StringToInt(info));
-			switch (Music_choice[client])
+			switch(Music_choice[client])
 			{
 				case 3:CPrintToChat(client, "%t", "Choose Assault");
 				case 4:CPrintToChat(client, "%t", "Choose Sharpened");
@@ -337,7 +346,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 58:CPrintToChat(client, "%t", "Choose ChipzelYellowMagic");
 				case 59:CPrintToChat(client, "%t", "Choose LauraShigiharaWorkHardPlayHard");
 				case 60:CPrintToChat(client, "%t", "Choose BbnoUMad");
-				
+				case 61:CPrintToChat(client, "%t", "Choose FlashbangDance");				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
 		}
@@ -348,16 +357,18 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 	}
 }
 
-void EquipMusic(int client)
+void EquipMusic (int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 60 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 61 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
+		
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;
-	SetEntProp(client, Prop_Send, "m_unMusicID", Music_choice[client]);
+		
+	SetEntProp (client, Prop_Send, "m_unMusicID", Music_choice[client]);
 }
 
-void SetMusic(int client, int index = 1)
+void SetMusic (int client, int index = 1)
 {
 	Music_choice[client] = index;
 	EquipMusic(client);
