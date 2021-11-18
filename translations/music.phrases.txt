@@ -10,11 +10,11 @@
 {
 	"Spawn Message"
 	{
-		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {GREEN}輸入: {RED}!music {GREEN}開啟音樂包選單並選擇你想聽的音樂!"
-		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {GREEN}Type: {RED}!music {GREEN}to open the menu and choose music you want!"
-		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {GREEN}Digite: {RED}!music {GREEN}para abrir o menu e escolher sua música de destaque!"
-		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {GREEN}输入: {RED}!music {GREEN}开启音乐盒菜单并选择你想听的音乐!"
-		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {GREEN}Komut: {RED}!music {GREEN}menüyü açmak ve istediğiniz müziği seçmek için!"
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}輸入: {GREEN}!music {NORMAL}開啟音樂包選單並選擇你想聽的音樂!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Type: {GREEN}!music {NORMAL}to open the menu and choose music you want!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Digite: {GREEN}!music {NORMAL}para abrir o menu e escolher seu kit de música!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}输入: {GREEN}!music {NORMAL}开启音乐盒菜单并选择你想听的音乐!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {NORMAL}Komut: {GREEN}!music {NORMAL}menüyü açmak ve istediğiniz müziği seçmek için!"
 	}
 
 	"Choose Default"
@@ -537,6 +537,24 @@
 		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}como destaque de jogo agora!"
 		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}了!"
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}seçildi!"
+	}
+	
+	"Choose BbnoUMad"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {DARKRED}bbno$ | u mad! {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {DARKRED}bbno$ | u mad! {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {DARKRED}bbno$ | u mad! {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {DARKRED}bbno$ | u mad! {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {DARKRED}bbno$ | u mad! {NORMAL}seçildi!"
+	}
+	
+	"Choose FlashbangDance"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}The Verkkars & n0thing | Flashbang Dance {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}The Verkkars & n0thing | Flashbang Dance {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGE}The Verkkars & n0thing | Flashbang Dance {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}The Verkkars & n0thing | Flashbang Dance {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}The Verkkars & n0thing | Flashbang Dance {NORMAL}seçildi!"
 	}
 
 //****************************************************   WARNING   *******************************************************
@@ -1071,5 +1089,23 @@
 		"pt"		"Laura Shigihara: Work Hard, Play Hard"
 		"chi"		"Laura Shigihara: Work Hard, Play Hard"
 		"tr"		"Laura Shigihara: Work Hard, Play Hard"
+	}
+	
+	"Music Menu BbnoUMad"
+	{
+		"zho"		"bbno$ | u mad!"
+		"en"		"bbno$ | u mad!"
+		"pt"		"bbno$ | u mad!"
+		"chi"		"bbno$ | u mad!"
+		"tr"		"bbno$ | u mad!"
+	}
+	
+	"Music Menu FlashbangDance"
+	{
+		"zho"		"The Verkkars & n0thing | FlashbangDance"
+		"en"		"The Verkkars & n0thing | FlashbangDance"
+		"pt"		"The Verkkars & n0thing | FlashbangDance"
+		"chi"		"The Verkkars & n0thing | FlashbangDance"
+		"tr"		"The Verkkars & n0thing | FlashbangDance"
 	}
 }
