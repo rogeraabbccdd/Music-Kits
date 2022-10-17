@@ -9,8 +9,7 @@
 
 int Music_choice[MAXPLAYERS + 1] =  { 1, ... };
 
-Handle g_cookieMusic;
-
+Cookie g_cookieMusic;
 ConVar cvarmusikitspawnmsg = null;
 
 public Plugin myinfo =
@@ -27,7 +26,7 @@ public void OnPluginStart()
 	LoadTranslations("music.phrases");
 	LoadTranslations("common.phrases");
 	
-	g_cookieMusic = RegClientCookie("Music_choice", "", CookieAccess_Private);
+	g_cookieMusic = new Cookie("Music_choice", "", CookieAccess_Private);
 	
 	HookEvent("player_spawn", Event_Player_Spawn, EventHookMode_Pre);
 	HookEvent("player_disconnect", Event_Disc);
@@ -47,7 +46,7 @@ public void OnPluginStart()
 public void OnClientCookiesCached(int client)
 {
 	char value[16];
-	GetClientCookie(client, g_cookieMusic, value, sizeof(value));
+	g_cookieMusic.Get(client, value, sizeof(value));
 	if (strlen(value) > 0)
 		Music_choice[client] = StringToInt(value);
 	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
@@ -397,5 +396,5 @@ void SetMusic(int client, int index = 1)
 	EquipMusic(client);
 	static char strID[4];
 	IntToString(index, strID, sizeof(strID));
-	SetClientCookie(client, g_cookieMusic, strID);
+	g_cookieMusic.Set(client, strID);
 }
