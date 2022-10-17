@@ -17,7 +17,7 @@ public Plugin myinfo =
 	name = "[CS:GO] Music Kits Valve",
 	author = "iEx, Kento, crashzk, northeaster, ByDexter, Emur",
 	description = "Allows you to choose any official valve music kits",
-	version = "1.9.1",
+	version = "1.10",
 	url = "https://github.com/rogeraabbccdd/Music-Kits",
 }
 
@@ -136,7 +136,16 @@ public Action Music(int client, int args)
 		AustinWintoryMochaPetal[128],
 		JesseHarlinAstroBellum[128],
 		ChipzelYellowMagic[128],
-		LauraShigiharaWorkHardPlayHard[128];
+		LauraShigiharaWorkHardPlayHard[128],		
+		bbnoumad[128],
+		TheVerkkarsn0thingFlashbangDance[128],
+		kliksphilipHeadingfortheSource[128],
+		HumanitysLastBreathVoid[128],
+		JuelzShooters[128],
+		Knock2dashstar[128],
+		MeechyDarkoGothicLuxury[128],
+		SullivanKingLockMeUp[128],
+		PerfectWorldHuaLianPaintedFace[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -195,7 +204,16 @@ public Action Music(int client, int args)
 		Format(AustinWintoryMochaPetal, sizeof(AustinWintoryMochaPetal), "%t", "Music Menu AustinWintoryMochaPetal");
 		Format(JesseHarlinAstroBellum, sizeof(JesseHarlinAstroBellum), "%t", "Music Menu JesseHarlinAstroBellum");
 		Format(ChipzelYellowMagic, sizeof(ChipzelYellowMagic), "%t", "Music Menu ChipzelYellowMagic");
-		Format(LauraShigiharaWorkHardPlayHard, sizeof(LauraShigiharaWorkHardPlayHard), "%t", "Music Menu LauraShigiharaWorkHardPlayHard");
+		Format(LauraShigiharaWorkHardPlayHard, sizeof(LauraShigiharaWorkHardPlayHard), "%t", "Music Menu LauraShigiharaWorkHardPlayHard");		
+		Format(bbnoumad, sizeof(bbnoumad), "%t", "Music Menu bbnoumad");
+		Format(TheVerkkarsn0thingFlashbangDance, sizeof(TheVerkkarsn0thingFlashbangDance), "%t", "Music Menu TheVerkkarsn0thingFlashbangDance");
+		Format(kliksphilipHeadingfortheSource, sizeof(kliksphilipHeadingfortheSource), "%t", "Music Menu kliksphilipHeadingfortheSource");
+		Format(HumanitysLastBreathVoid, sizeof(HumanitysLastBreathVoid), "%t", "Music Menu HumanitysLastBreathVoid");		
+		Format(JuelzShooters, sizeof(JuelzShooters), "%t", "Music Menu JuelzShooters");
+		Format(Knock2dashstar, sizeof(Knock2dashstar), "%t", "Music Menu Knock2dashstar");
+		Format(MeechyDarkoGothicLuxury, sizeof(MeechyDarkoGothicLuxury), "%t", "Music Menu MeechyDarkoGothicLuxury");		
+		Format(SullivanKingLockMeUp, sizeof(SullivanKingLockMeUp), "%t", "Music Menu SullivanKingLockMeUp");
+		Format(PerfectWorldHuaLianPaintedFace, sizeof(PerfectWorldHuaLianPaintedFace), "%t", "Music Menu PerfectWorldHuaLianPaintedFace");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
@@ -251,17 +269,25 @@ public Action Music(int client, int args)
 		menu.AddItem("50", AllforDust);
 		menu.AddItem("51", DarkenKorb);
 		menu.AddItem("52", TheLowlifePack);
-		menu.AddItem("53", ChainSawLxadxut);
-		
+		menu.AddItem("53", ChainSawLxadxut);		
 		menu.AddItem("54", FreakyDNAVici);
 		menu.AddItem("55", SarahSchachnerKOLIBRI);
 		menu.AddItem("56", AustinWintoryMochaPetal);
 		menu.AddItem("57", JesseHarlinAstroBellum);
 		menu.AddItem("58", ChipzelYellowMagic);
-		menu.AddItem("59", LauraShigiharaWorkHardPlayHard);
+		menu.AddItem("59", LauraShigiharaWorkHardPlayHard);		
+		menu.AddItem("60", bbnoumad);
+		menu.AddItem("61", TheVerkkarsn0thingFlashbangDance);
+		menu.AddItem("62", kliksphilipHeadingfortheSource);
+		menu.AddItem("63", HumanitysLastBreathVoid);
+		menu.AddItem("64", JuelzShooters);
+		menu.AddItem("65", Knock2dashstar);
+		menu.AddItem("66", MeechyDarkoGothicLuxury);
+		menu.AddItem("67", SullivanKingLockMeUp);
+		menu.AddItem("68", PerfectWorldHuaLianPaintedFace);
 		
 		menu.ExitButton = true;
-		menu.Display(client, 60);
+		menu.Display(client, 69);
 	}
 	return Plugin_Handled;
 }
@@ -333,7 +359,16 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 56:CPrintToChat(client, "%t", "Choose AustinWintoryMochaPetal");
 				case 57:CPrintToChat(client, "%t", "Choose JesseHarlinAstroBellum");
 				case 58:CPrintToChat(client, "%t", "Choose ChipzelYellowMagic");
-				case 59:CPrintToChat(client, "%t", "Choose LauraShigiharaWorkHardPlayHard");
+				case 59:CPrintToChat(client, "%t", "Choose LauraShigiharaWorkHardPlayHard");				
+				case 60:CPrintToChat(client, "%t", "Choose bbnoumad");
+				case 61:CPrintToChat(client, "%t", "Choose TheVerkkarsn0thingFlashbangDance");
+				case 62:CPrintToChat(client, "%t", "Choose kliksphilipHeadingfortheSource");
+				case 63:CPrintToChat(client, "%t", "Choose HumanitysLastBreathVoid");
+				case 64:CPrintToChat(client, "%t", "Choose JuelzShooters");
+				case 65:CPrintToChat(client, "%t", "Choose Knock2dashstar");
+				case 66:CPrintToChat(client, "%t", "Choose MeechyDarkoGothicLuxury");
+				case 67:CPrintToChat(client, "%t", "Choose SullivanKingLockMeUp");
+				case 68:CPrintToChat(client, "%t", "Choose PerfectWorldHuaLianPaintedFace");
 				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
@@ -347,7 +382,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 
 void EquipMusic(int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 59 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 68 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;

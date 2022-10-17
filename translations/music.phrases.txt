@@ -538,6 +538,87 @@
 		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}了!"
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PINK}Laura Shigihara: Work Hard, Play Hard{NORMAL}seçildi!"
 	}
+	
+	"Choose bbnoumad"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {PURPLE}bbno$ - u mad! {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {PURPLE}bbno$ - u mad! {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PURPLE}bbno$ - u mad! {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PURPLE}bbno$ - u mad! {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PURPLE}Bbbno$ - u mad! {NORMAL}seçildi!"
+	}
+	
+	"Choose TheVerkkarsn0thingFlashbangDance"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}The Verkkars & n0thing - Flashbang Dance {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}The Verkkars & n0thing - Flashbang Dance {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGEThe Verkkars & n0thing - Flashbang Dance {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}The Verkkars & n0thing - Flashbang Dance {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}The Verkkars & n0thing - Flashbang Dance {NORMAL}seçildi!"
+	}
+	
+	"Choose kliksphilipHeadingfortheSource"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {BLUE}3kliksphilip - Heading for the Source {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {BLUE}3kliksphilip - Heading for the Source {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {BLUE}3kliksphilip - Heading for the Source {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {BLUE}3kliksphilip - Heading for the Source {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {BLUE}3kliksphilip - Heading for the Source {NORMAL}seçildi!"
+	}
+	
+	"Choose HumanitysLastBreathVoid"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {ORANGE}Humanity's Last Breath - Void {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {ORANGE}Humanity's Last Breath - Void {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {ORANGE}Humanity's Last Breath - Void {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {ORANGE}Humanity's Last Breath - Void {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {ORANGE}Humanity's Last Breath - Void {NORMAL}seçildi!"
+	}
+	
+	"Choose JuelzShooters"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {PURPLE}Juelz - Shooters {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {PURPLE}Juelz - Shooters {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PURPLE}Juelz - Shooters {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PURPLE}Juelz - Shooters {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PURPLE}Juelz - Shooters {NORMAL}seçildi!"
+	}
+	
+	"Choose Knock2dashstar"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {GREEN}Knock2 - dashstar* {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {GREEN}Knock2 - dashstar* {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {GREEN}Knock2 - dashstar* {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {GREEN}Knock2 - dashstar* {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {GREEN}Knock2 - dashstar* {NORMAL}seçildi!"
+	}
+	
+	"Choose MeechyDarkoGothicLuxury"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {PURPLE}Meechy Darko - Gothic Luxury {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {PURPLE}Meechy Darko - Gothic Luxury {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {PURPLE}Meechy Darko - Gothic Luxury {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {PURPLE}Meechy Darko - Gothic Luxury {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {PURPLE}Meechy Darko - Gothic Luxury {NORMAL}seçildi!"
+	}
+	
+	"Choose SullivanKingLockMeUp"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {YELLOW}Sullivan King - Lock Me Up {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {YELLOW}Sullivan King - Lock Me Up {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {YELLOW}Sullivan King - Lock Me Up {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {YELLOW}Sullivan King - Lock Me Up {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {YELLOW}Sullivan King - Lock Me Up {NORMAL}seçildi!"
+	}
+	
+	"Choose PerfectWorldHuaLianPaintedFace"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}seçildi!"
+	}
 
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -1071,5 +1152,86 @@
 		"pt"		"Laura Shigihara: Work Hard, Play Hard"
 		"chi"		"Laura Shigihara: Work Hard, Play Hard"
 		"tr"		"Laura Shigihara: Work Hard, Play Hard"
+	}
+	
+	"Music Menu bbnoumad"
+	{
+		"zho"		"bbno$ - u mad!"
+		"en"		"bbno$ - u mad!"
+		"pt"		"bbno$ - u mad!"
+		"chi"		"bbno$ - u mad!"
+		"tr"		"bbno$ - u mad!"
+	}
+	
+	"Music Menu TheVerkkarsn0thingFlashbangDance"
+	{
+		"zho"		"The Verkkars & n0thing - Flashbang Dance"
+		"en"		"The Verkkars & n0thing - Flashbang Dance"
+		"pt"		"The Verkkars & n0thing - Flashbang Dance"
+		"chi"		"The Verkkars & n0thing - Flashbang Dance"
+		"tr"		"The Verkkars & n0thing - Flashbang Dance"
+	}
+	
+	"Music Menu kliksphilipHeadingfortheSource"
+	{
+		"zho"		"3kliksphilip - Heading for the Source"
+		"en"		"3kliksphilip - Heading for the Source"
+		"pt"		"3kliksphilip - Heading for the Source"
+		"chi"		"3kliksphilip - Heading for the Source"
+		"tr"		"3kliksphilip - Heading for the Source"
+	}
+	
+	"Music Menu HumanitysLastBreathVoid"
+	{
+		"zho"		"Humanity's Last Breath - Void"
+		"en"		"Humanity's Last Breath - Void"
+		"pt"		"Humanity's Last Breath - Void"
+		"chi"		"Humanity's Last Breath - Void"
+		"tr"		"Humanity's Last Breath - Void"
+	}
+	
+	"Music Menu JuelzShooters"
+	{
+		"zho"		"Juelz - Shooters"
+		"en"		"Juelz - Shooters"
+		"pt"		"Juelz - Shooters"
+		"chi"		"Juelz - Shooters"
+		"tr"		"Juelz - Shooters"
+	}
+	
+	"Music Menu Knock2dashstar"
+	{
+		"zho"		"Knock2 - dashstar*"
+		"en"		"Knock2 - dashstar*"
+		"pt"		"Knock2 - dashstar*"
+		"chi"		"Knock2 - dashstar*"
+		"tr"		"Knock2 - dashstar*"
+	}
+	
+	"Music Menu MeechyDarkoGothicLuxury"
+	{
+		"zho"		"Meechy Darko - Gothic Luxury"
+		"en"		"Meechy Darko - Gothic Luxury"
+		"pt"		"Meechy Darko - Gothic Luxury"
+		"chi"		"Meechy Darko - Gothic Luxury"
+		"tr"		"Meechy Darko - Gothic Luxury"
+	}
+	
+	"Music Menu SullivanKingLockMeUp"
+	{
+		"zho"		"Sullivan King - Lock Me Up"
+		"en"		"Sullivan King - Lock Me Up"
+		"pt"		"Sullivan King - Lock Me Up"
+		"chi"		"Sullivan King - Lock Me Up"
+		"tr"		"Sullivan King - Lock Me Up"
+	}
+	
+	"Music Menu PerfectWorldHuaLianPaintedFace"
+	{
+		"zho"		"Perfect World - 花脸 Hua Lian (Painted Face)"
+		"en"		"Perfect World - 花脸 Hua Lian (Painted Face)"
+		"pt"		"Perfect World - 花脸 Hua Lian (Painted Face)"
+		"chi"		"Perfect World - 花脸 Hua Lian (Painted Face)"
+		"tr"		"Perfect World - 花脸 Hua Lian (Painted Face)"
 	}
 }
