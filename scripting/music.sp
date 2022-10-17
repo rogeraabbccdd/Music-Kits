@@ -10,6 +10,7 @@
 int Music_choice[MAXPLAYERS + 1] =  { 1, ... };
 
 Cookie g_cookieMusic;
+
 ConVar cvarmusikitspawnmsg = null;
 
 public Plugin myinfo =
