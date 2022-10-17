@@ -76,6 +76,7 @@ public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
 	if (client)
 		Music_choice[client] = 1;
 }
+
 public Action Music(int client, int args)
 {
 	if (IsClientInGame(client))
