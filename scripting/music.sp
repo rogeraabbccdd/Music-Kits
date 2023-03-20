@@ -37,9 +37,12 @@ public void OnPluginStart()
 	
 	AutoExecConfig(true, "csgo_musickit");
 	
-	for (int i = 1; i <= MaxClients; i++)if (IsClientInGame(i) && !IsFakeClient(i) && AreClientCookiesCached(i))
+	for (int i = 1; i <= MaxClients; i++)
 	{
-		OnClientCookiesCached(i);
+		if (IsClientInGame(i) && !IsFakeClient(i) && AreClientCookiesCached(i))
+		{
+			OnClientCookiesCached(i);
+		}
 	}
 }
 
@@ -146,7 +149,8 @@ public Action Music(int client, int args)
 		Knock2dashstar[128],
 		MeechyDarkoGothicLuxury[128],
 		SullivanKingLockMeUp[128],
-		PerfectWorldHuaLianPaintedFace[128];
+		PerfectWorldHuaLianPaintedFace[128],
+		DanelCurryUltimate[128];
 		
 		Format(Default, sizeof(Default), "%t", "Music Menu Default");
 		Format(Assault, sizeof(Assault), "%t", "Music Menu Assault");
@@ -215,6 +219,7 @@ public Action Music(int client, int args)
 		Format(MeechyDarkoGothicLuxury, sizeof(MeechyDarkoGothicLuxury), "%t", "Music Menu MeechyDarkoGothicLuxury");		
 		Format(SullivanKingLockMeUp, sizeof(SullivanKingLockMeUp), "%t", "Music Menu SullivanKingLockMeUp");
 		Format(PerfectWorldHuaLianPaintedFace, sizeof(PerfectWorldHuaLianPaintedFace), "%t", "Music Menu PerfectWorldHuaLianPaintedFace");
+		Format(DanelCurryUltimate, sizeof(DanelCurryUltimate), "%t", "Music Menu DanelCurryUltimate");
 		
 		Menu menu = new Menu(MusicHandler);
 		menu.SetTitle("%t", "Music Menu Title");
@@ -286,9 +291,10 @@ public Action Music(int client, int args)
 		menu.AddItem("66", MeechyDarkoGothicLuxury);
 		menu.AddItem("67", SullivanKingLockMeUp);
 		menu.AddItem("68", PerfectWorldHuaLianPaintedFace);
+		menu.AddItem("69", DanelCurryUltimate);
 		
 		menu.ExitButton = true;
-		menu.Display(client, 69);
+		menu.Display(client, 70);
 	}
 	return Plugin_Handled;
 }
@@ -370,6 +376,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 				case 66:CPrintToChat(client, "%t", "Choose MeechyDarkoGothicLuxury");
 				case 67:CPrintToChat(client, "%t", "Choose SullivanKingLockMeUp");
 				case 68:CPrintToChat(client, "%t", "Choose PerfectWorldHuaLianPaintedFace");
+				case 69:CPrintToChat(client, "%t", "Choose DanelCurryUltimate");
 				
 				default:CPrintToChat(client, "%t", "Choose Default");
 			}
@@ -383,7 +390,7 @@ public int MusicHandler(Menu menu, MenuAction action, int client, int itemNum)
 
 void EquipMusic(int client)
 {
-	if (Music_choice[client] < 0 || Music_choice[client] > 68 || Music_choice[client] == 2)
+	if (Music_choice[client] < 0 || Music_choice[client] > 69 || Music_choice[client] == 2)
 		Music_choice[client] = 1;
 	if (!GetEntProp(client, Prop_Send, "m_unMusicID"))
 		return;

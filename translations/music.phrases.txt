@@ -620,6 +620,15 @@
 		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {GRAY}Perfect World - 花脸 Hua Lian (Painted Face) {NORMAL}seçildi!"
 	}
 
+	"Choose DanelCurryUltimate"
+	{
+		"zho"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你現在可以在遊戲裡聽 {RED}Denzel Curry - ULTIMATE {NORMAL}了!"
+		"en"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}You can listen to music: {RED}Denzel Curry - ULTIMATE {NORMAL}in game now!"
+		"pt"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}Você pode ouvir a música: {RED}Denzel Curry - ULTIMATE {NORMAL}como destaque de jogo agora!"
+		"chi"		"{NORMAL}[{DARKRED}MUSIC{NORMAL}] {NORMAL}你现在可以在游戏里听 {RED}Denzel Curry - ULTIMATE {NORMAL}了!"
+		"tr"		"{NORMAL}[{DARKRED}MÜZİK{NORMAL}] {RED}Denzel Curry - ULTIMATE {NORMAL}seçildi!"
+	}
+
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
 
@@ -1233,5 +1242,13 @@
 		"pt"		"Perfect World - 花脸 Hua Lian (Painted Face)"
 		"chi"		"Perfect World - 花脸 Hua Lian (Painted Face)"
 		"tr"		"Perfect World - 花脸 Hua Lian (Painted Face)"
+	}
+	"Music Menu DanelCurryUltimate"
+	{
+		"zho"		"Denzel Curry - ULTIMATE"
+		"en"		"Denzel Curry - ULTIMATE"
+		"pt"		"Denzel Curry - ULTIMATE"
+		"chi"		"Denzel Curry - ULTIMATE"
+		"tr"		"Denzel Curry - ULTIMATE"
 	}
 }
