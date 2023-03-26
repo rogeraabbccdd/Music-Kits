@@ -50,26 +50,21 @@ public void OnClientCookiesCached(int client)
 {
 	char value[16];
 	g_cookieMusic.Get(client, value, sizeof(value));
-	if (strlen(value) > 0)
+	if (strlen(value) > 0) {
 		Music_choice[client] = StringToInt(value);
-	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
-		return;
-}
-
-public Action PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
-{
-	int client = GetClientOfUserId(event.GetInt("userid"));
-	if (GetClientTeam(client) == 1 && !IsPlayerAlive(client))
-		return;
-	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
-		CPrintToChat(client, "%t", "Spawn Message");
+	}
+	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client))	return;
+	if(Music_choice[client] != 1) EquipMusic(client);
 }
 
 public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
-	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client) || Music_choice[client] != 1)
+	if (!(0 < client <= MaxClients) || !IsClientInGame(client) || IsFakeClient(client))
 		return;
+	if(Music_choice[client] != 1) EquipMusic(client);
+	if (GetConVarInt(cvarmusikitspawnmsg) == 1)
+		CPrintToChat(client, "%t", "Spawn Message");
 }
 
 public Action Event_Disc(Event event, const char[] name, bool dontBroadcast)
